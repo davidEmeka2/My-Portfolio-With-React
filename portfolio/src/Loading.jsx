@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Home from './Pages/Home'
+
 
 
 
@@ -34,7 +36,9 @@ function Loading() {
           <div className='loadScale'></div>
         <p className='number text-5xl'>{number}%</p>
         </div>
-        </div>}
+        </div>
+        }
+       
     </>
   )
 
