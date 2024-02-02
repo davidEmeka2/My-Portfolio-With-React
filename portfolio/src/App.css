@@ -236,8 +236,8 @@ li{
     position: relative;
     height: 500px;
     width: 50%;
-    border: 2px solid black;
-    left: 25%;
+    /* border: 2px solid black; */
+    left: 50%;
     margin-top: 40px;
 }
 
@@ -245,10 +245,9 @@ li{
     position: absolute;
     height: 100%;
     width: 100%;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     top: 0;
-    display: flex;
-   flex-wrap: wrap;
+
    animation: bg-trans 5s infinite;
    transition: 5s;
 }
@@ -272,11 +271,9 @@ li{
 .secondPic{
     height: 100%;
     width: 100%;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     position: absolute;
     top: 0;
-    display: flex;
-    flex-wrap: wrap;
     animation: bg-trans2 5s infinite;
     transition: 5s;
 }
@@ -292,29 +289,30 @@ li{
     }
 }
 
-.firstPic > img{
-    height: 130px;
-    width: 113px;
-}
-
-.secondPic > img{
-    height: 130px;
-    width: 113px;
-}
 
 html{
     scroll-timeline: --mov;
 }
 
 .mov1{
-animation: mov1 1s ;
-animation-timeline: --mov;
-flex-shrink: 0;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+   animation: mover 1s;
+   animation-timeline: --mov;
+   
 }
 
-@keyframes mov1 {
-    100%{
-        transform: translateX(-1000%);
-        transform: translateY(200%);
+@keyframes mover {
+
+    
+    from{
+        transform: translate(0);
     }
+
+    to{
+        transform: translate(-2000px , -2000px);
+    }
+
+    
 }

@@ -62,7 +62,7 @@ function Home() {
     <section className='picSec'>
       <div className='firstPic'>
         <img src={img1} alt="" className='mov1'/>
-        <img src={img2} alt="" className='mov2'/>
+        {/* <img src={img2} alt="" className='mov2'/>
         <img src={img3} alt="" className='mov3'/>
         <img src={img4} alt="" className='mov4'/>
         <img src={img5} alt="" className='mov5'/>
@@ -85,12 +85,12 @@ function Home() {
         <img src={img22} alt="" className='mov22'/>
         <img src={img23} alt="" className='mov23'/>
         <img src={img24} alt="" className='mov24'/>
-        <img src={img25} alt="" className='mov25'/>
+        <img src={img25} alt="" className='mov25'/> */}
     </div>
 
       <div className='secondPic'>
       <img src={img1_2} alt="" className='mov1'/>
-        <img src={img2_2} alt="" className='mov2'/>
+        {/* <img src={img2_2} alt="" className='mov2'/>
         <img src={img3_2} alt="" className='mov3'/>
         <img src={img4_2} alt="" className='mov4'/>
         <img src={img5_2} alt="" className='mov5'/>
@@ -113,7 +113,7 @@ function Home() {
         <img src={img22_2} alt="" className='mov22'/>
         <img src={img23_2} alt="" className='mov23'/>
         <img src={img24_2} alt="" className='mov24'/>
-        <img src={img25_2} alt="" className='mov25'/>
+        <img src={img25_2} alt="" className='mov25'/> */}
       </div>
     </section>
 
