@@ -51,23 +51,48 @@ import img23_2 from "../assets/portfolio Bg Img 2/image_part_023.png"
 import img24_2 from "../assets/portfolio Bg Img 2/image_part_024.png"
 import img25_2 from "../assets/portfolio Bg Img 2/image_part_025.png"
 
+import defautPic from "../assets/background Color icon/default.svg" 
+import northMiracle from "../assets/background Color icon/North Miracle.svg"
+import nightSky from "../assets/background Color icon/Night sky.svg"
+import loveKiss from "../assets/background Color icon/Love kiss.svg"
+
+import Aos from "aos"
+import 'aos/dist/aos.css'
+
 
 function Home() {
 
-  
-  
+  useEffect(()=>{
+    Aos.init()
+    return () =>{
+      Aos.refresh()
+      Aos.refreshHard()
+    }
+  },[])
+
+
+
 
   return (
     <>
+
+    <section className='nameSection'>
+      <h1><span className='hi' >Hi,</span> <span className="im">I'm</span> <span className='david'>David</span> </h1>
+    </section>
+
+    <h1 className='youre'>You're about to embark on a journey through my imagination.</h1>
+
+
+
     <section className='picSec'>
       <div className='firstPic'>
         <img src={img1} alt="" className='mov1'/>
-        {/* <img src={img2} alt="" className='mov2'/>
+         <img src={img2} alt="" className='mov2'/>
         <img src={img3} alt="" className='mov3'/>
-        <img src={img4} alt="" className='mov4'/>
+       <img src={img4} alt="" className='mov4'/>
         <img src={img5} alt="" className='mov5'/>
         <img src={img6} alt="" className='mov6'/>
-        <img src={img7} alt="" className='mov7'/>
+       <img src={img7} alt="" className='mov7'/>
         <img src={img8} alt="" className='mov8'/>
         <img src={img9} alt="" className='mov9'/>
         <img src={img10} alt="" className='mov10'/>
@@ -85,12 +110,12 @@ function Home() {
         <img src={img22} alt="" className='mov22'/>
         <img src={img23} alt="" className='mov23'/>
         <img src={img24} alt="" className='mov24'/>
-        <img src={img25} alt="" className='mov25'/> */}
+        <img src={img25} alt="" className='mov25'/>
     </div>
 
       <div className='secondPic'>
       <img src={img1_2} alt="" className='mov1'/>
-        {/* <img src={img2_2} alt="" className='mov2'/>
+        <img src={img2_2} alt="" className='mov2'/>
         <img src={img3_2} alt="" className='mov3'/>
         <img src={img4_2} alt="" className='mov4'/>
         <img src={img5_2} alt="" className='mov5'/>
@@ -113,11 +138,71 @@ function Home() {
         <img src={img22_2} alt="" className='mov22'/>
         <img src={img23_2} alt="" className='mov23'/>
         <img src={img24_2} alt="" className='mov24'/>
-        <img src={img25_2} alt="" className='mov25'/> */}
+        <img src={img25_2} alt="" className='mov25'/> 
       </div>
     </section>
 
-    <div className="strecher"></div>
+    
+    
+<section className='customizeSec'>
+
+<div class="lighterBG"> </div>
+
+<div className='customizeH1 text-center' data-aos="fade-right">Personalize Your Experience To Suit Your Style</div>
+
+<div className='themeH1 text-center' data-aos="fade-right"><p>Choose Theme</p></div>
+
+<section className='themeOptions' data-aos="fade-down">
+  <div data-aos ="fade-right" className='themeDefault'><img src={defautPic} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme1'><img src={northMiracle} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme2'><img src={nightSky} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme3'><img src={loveKiss} alt="" className='aThemePic'/></div>
+
+
+  <div data-aos ="fade-up" className='font3P'><p>Default Theme</p></div>
+  <div data-aos ="fade-up" className='fontDefaultP'><p>North Miracle</p></div>
+  <div data-aos ="fade-up" className='font1P'><p>Night Sky</p></div>
+  <div data-aos ="fade-up" className='font2P'><p>Love Kiss</p></div>
+
+</section>
+
+
+<div className='fontH1 text-center' data-aos="fade-right"><p>Font Style</p></div>
+
+<section className='fontOptions' data-aos="fade-down">
+  <div data-aos ="fade-right" className='fontDefault'></div>
+  <div data-aos ="fade-right" className='font1'></div>
+  <div data-aos ="fade-right" className='font2'></div>
+  <div data-aos ="fade-right" className='font3'></div>
+
+
+  <div data-aos ="fade-up" className='fontDefaultP'><p>Default Font</p></div>
+  <div data-aos ="fade-up" className='font1P'><p>Open Sans</p></div>
+  <div data-aos ="fade-up" className='font2P'><p>Roboto Slabs</p></div>
+  <div data-aos ="fade-up" className='font3P'><p>Playfair Display</p></div>
+</section>
+
+
+<div className='bgMusicH1 text-center' data-aos="fade-right"><p>Background Music</p></div>
+
+<section className='bgMusicOptions' data-aos="fade-down">
+  <div data-aos ="fade-right" className='bgMusicStop'></div>
+  <div data-aos ="fade-right" className='bgMusic1'></div>
+  <div data-aos ="fade-right" className='bgMusic2'></div>
+  <div data-aos ="fade-right" className='bgMusic3'></div>
+
+
+  <div data-aos ="fade-up" className='fontDefaultP'><p>Stop Music</p></div>
+  <div data-aos ="fade-up" className='font1P'><p>Konoha Gravy Beats</p></div>
+  <div data-aos ="fade-up" className='font2P'><p>Bupa Beats Big Money</p></div>
+  <div data-aos ="fade-up" className='font3P'><p>Anno Domini Beats Forever</p></div>
+
+</section>
+
+
+</section>
+
+<div className='strecher'></div>
     </>
   )
 }
