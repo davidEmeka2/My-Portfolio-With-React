@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import img1 from "../assets/portfolio Bg Img 1/image_part_001.png"
 import img2 from "../assets/portfolio Bg Img 1/image_part_002.png"
 import img3 from "../assets/portfolio Bg Img 1/image_part_003.png"
@@ -50,17 +51,25 @@ import img22_2 from "../assets/portfolio Bg Img 2/image_part_022.png"
 import img23_2 from "../assets/portfolio Bg Img 2/image_part_023.png"
 import img24_2 from "../assets/portfolio Bg Img 2/image_part_024.png"
 import img25_2 from "../assets/portfolio Bg Img 2/image_part_025.png"
+import aboutImg from "../assets/aboutImg.png"
 
 import defautPic from "../assets/background Color icon/default.svg" 
 import northMiracle from "../assets/background Color icon/North Miracle.svg"
 import nightSky from "../assets/background Color icon/Night sky.svg"
 import loveKiss from "../assets/background Color icon/Love kiss.svg"
 
+import musicIcon from "../assets/music icon.png"
+import smoothSkinPic from "../assets/smoothSkin.jpg"
+import figmaProjectPic from "../assets/Figma resturant work.png"
+import todoListPic from "../assets/todo list.png"
+
 import Aos from "aos"
 import 'aos/dist/aos.css'
 
 
-function Home() {
+function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgColor1, bgColor2, fontColor1, fontColor2, konoha, bigMoney, forever, pauser,themeChanger2,themeChanger3,defaultTheme}) {
+
+
 
   useEffect(()=>{
     Aos.init()
@@ -71,16 +80,16 @@ function Home() {
   },[])
 
 
-
-
+  
+  
   return (
     <>
 
     <section className='nameSection'>
-      <h1><span className='hi' >Hi,</span> <span className="im">I'm</span> <span className='david'>David</span> </h1>
+      <h1 style={font}><span className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2}>I'm</span> <span className='david' style={fontColor2}>David</span> </h1>
     </section>
 
-    <h1 className='youre'>You're about to embark on a journey through my imagination.</h1>
+    <h1 className='youre' style={font}><span style={fontColor2}><p>You're about to embark on a journey through my imagination.</p></span></h1>
 
 
 
@@ -146,63 +155,173 @@ function Home() {
     
 <section className='customizeSec'>
 
-<div class="lighterBG"> </div>
+<div className="lighterBG" style={bgColor2}> </div>
+<div className="DarkerBG" style={bgColor2}> </div>
 
-<div className='customizeH1 text-center' data-aos="fade-right">Personalize Your Experience To Suit Your Style</div>
+<div className='customizeH1 text-center' data-aos="fade-right" style={font}>Personalize Your Experience To Suit Your Style</div>
 
-<div className='themeH1 text-center' data-aos="fade-right"><p>Choose Theme</p></div>
+<div className='themeH1 text-center' data-aos="fade-right" style={font}><p>Select Theme</p></div>
 
 <section className='themeOptions' data-aos="fade-down">
-  <div data-aos ="fade-right" className='themeDefault'><img src={defautPic} alt="" className='aThemePic'/></div>
-  <div data-aos ="fade-right" className='theme1'><img src={northMiracle} alt="" className='aThemePic'/></div>
-  <div data-aos ="fade-right" className='theme2'><img src={nightSky} alt="" className='aThemePic'/></div>
-  <div data-aos ="fade-right" className='theme3'><img src={loveKiss} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='themeDefault' onClick={defaultTheme}><img src={defautPic} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme1' onClick={themeChanger}><img src={northMiracle} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme2' onClick={themeChanger2}><img src={nightSky} alt="" className='aThemePic'/></div>
+  <div data-aos ="fade-right" className='theme3' onClick={themeChanger3}><img src={loveKiss} alt="" className='aThemePic'/></div>
 
 
-  <div data-aos ="fade-up" className='font3P'><p>Default Theme</p></div>
-  <div data-aos ="fade-up" className='fontDefaultP'><p>North Miracle</p></div>
-  <div data-aos ="fade-up" className='font1P'><p>Night Sky</p></div>
-  <div data-aos ="fade-up" className='font2P'><p>Love Kiss</p></div>
+  <div data-aos ="fade-up" className='font3P'  style={font}><p>Default Theme</p></div>
+  <div data-aos ="fade-up" className='fontDefaultP'  style={font}><p>North Miracle</p></div>
+  <div data-aos ="fade-up" className='font1P'  style={font}><p>Night Sky</p></div>
+  <div data-aos ="fade-up" className='font2P'  style={font}><p>Love Kiss</p></div>
 
 </section>
 
 
-<div className='fontH1 text-center' data-aos="fade-right"><p>Font Style</p></div>
+<div className='fontH1 text-center' data-aos="fade-right" style={font}><p>Select Font Style</p></div>
 
 <section className='fontOptions' data-aos="fade-down">
-  <div data-aos ="fade-right" className='fontDefault'></div>
-  <div data-aos ="fade-right" className='font1'></div>
-  <div data-aos ="fade-right" className='font2'></div>
-  <div data-aos ="fade-right" className='font3'></div>
+  <div data-aos ="fade-right" className='fontDefault' onClick={defaultFont}>Aa</div>
+  <div data-aos ="fade-right" className='font1' onClick={Opensans}><p>Aa</p></div>
+  <div data-aos ="fade-right" className='font2' onClick={Roboto}><p>Aa</p></div>
+  <div data-aos ="fade-right" className='font3'onClick={Playfair}><p>Aa</p></div>
 
 
-  <div data-aos ="fade-up" className='fontDefaultP'><p>Default Font</p></div>
-  <div data-aos ="fade-up" className='font1P'><p>Open Sans</p></div>
-  <div data-aos ="fade-up" className='font2P'><p>Roboto Slabs</p></div>
-  <div data-aos ="fade-up" className='font3P'><p>Playfair Display</p></div>
+  <div data-aos ="fade-up" className='fontDefaultPf'><p>Default Font</p></div>
+  <div data-aos ="fade-up" className='font1Pf'><p>Open Sans</p></div>
+  <div data-aos ="fade-up" className='font2Pf'><p>Roboto Slabs</p></div>
+  <div data-aos ="fade-up" className='font3Pf'><p>Playfair Display</p></div>
 </section>
 
 
-<div className='bgMusicH1 text-center' data-aos="fade-right"><p>Background Music</p></div>
+<div className='bgMusicH1 text-center' data-aos="fade-right"  style={font}><p>Select Background Music</p></div>
 
 <section className='bgMusicOptions' data-aos="fade-down">
-  <div data-aos ="fade-right" className='bgMusicStop'></div>
-  <div data-aos ="fade-right" className='bgMusic1'></div>
-  <div data-aos ="fade-right" className='bgMusic2'></div>
-  <div data-aos ="fade-right" className='bgMusic3'></div>
+  <div data-aos ="fade-right" className='bgMusicStop' onClick={pauser}><div className="stopIcon"></div></div>
+  <div data-aos ="fade-right" className='bgMusic1' onClick={konoha}><img src={musicIcon} alt="" className='musicIcon'/></div>
+  <div data-aos ="fade-right" className='bgMusic2' onClick={bigMoney}><img src={musicIcon} alt="" className='musicIcon'/></div>
+  <div data-aos ="fade-right" className='bgMusic3' onClick={forever}><img src={musicIcon} alt="" className='musicIcon'/></div>
 
 
-  <div data-aos ="fade-up" className='fontDefaultP'><p>Stop Music</p></div>
-  <div data-aos ="fade-up" className='font1P'><p>Konoha Gravy Beats</p></div>
-  <div data-aos ="fade-up" className='font2P'><p>Bupa Beats Big Money</p></div>
-  <div data-aos ="fade-up" className='font3P'><p>Anno Domini Beats Forever</p></div>
+  <div data-aos ="fade-up" className='fontDefaultP'  style={font}><p>Stop Music</p></div>
+  <div data-aos ="fade-up" className='font1P'  style={font}><p>Konoha Gravy Beats</p></div>
+  <div data-aos ="fade-up" className='font2P'  style={font} ><p>Bupa Beats Big Money</p></div>
+  <div data-aos ="fade-up" className='font3P'  style={font}><p>Anno Domini Beats Forever</p></div>
+
+</section>
+
+
+</section>
+<section className='aboutSec'>
+
+
+<div className="lighterBG2" style={bgColor2}> </div>
+<div className="DarkerBG2" style={bgColor2}> </div>
+
+<div className='aboutPicAndTxt' style={font} data-aos ="fade-right">
+  <div data-aos ="fade-right"><h1 className='text-7xl aboutH1' style={fontColor2}>About Me</h1></div>
+
+  <div className='aboutImg' style={bgColor2} data-aos ="fade-right"><div className='AboutFrame'><img src={aboutImg} alt="" style={{height:"97%",width:"97%"}}/></div></div>
+
+
+<div className='aboutTxt' style={fontColor2} data-aos ="fade-up"><p> I'm Chukwuemeka David, a front-end enthusiast with experience in graphics design, UI/UX, and front-end web development.</p></div>
+
+
+<Link to="/About" className='viewMore' style={bgColor2} data-aos ="fade-right"><span style={{color:"white"}}>View More</span></Link>
+
+</div>
 
 </section>
 
+<section className='worksSec'>
+
+<div className="lighterBg3" style={bgColor2}> </div>
+<div className="DarkerBg3" style={bgColor2}> </div>
+
+
+
+<section className='allWorks' style={font}>
+
+<div data-aos ="fade-right" style={font}><h1 className='text-7xl text-center worksH1'>Works</h1></div>
+
+<div data-aos ="fade-down" className="work1">
+  <div className='todoListPic' style={bgColor1}><img src={todoListPic} alt="" className='todoList' /></div>
+
+
+<div  className='text-center todoTxt'>
+  <h1 className='text-4xl text-center pb-3'><span>To-Do App</span></h1>
+  <p>
+  Effortlessly manage tasks with my sleek ToDo app! Built with HTML, CSS, and JavaScript, it offers a minimalist design for easy organization. Add, edit, and mark tasks complete with style and simplicity. Stay productive on the go!
+  </p>
+  </div>
+
+  
+<div data-aos ="fade-right" className='todoButtons'>
+<a href="https://davidstodoapp.vercel.app/" target='_blank' className='viewSite'>View Site</a>
+
+<a href="https://github.com/Davia222/To-do-App.git" target='_blank' className='gitHubRepo'>GitHub Repo</a>
+
+</div>
+
+  </div>
+
+
+
+<div  className="work2" data-aos ="fade-down" >
+
+  <div className='ResturantPicDiv' style={bgColor1}><img src={figmaProjectPic} alt="" className='figmaResturant'/></div>
+
+<div className='text-center  figmaTxt'>
+<h1 className='text-4xl text-center pb-3'><span>Resturant Dish Animation</span></h1>
+<p>
+Enjoy a tasty animation! Using Figma, I crafted a dynamic restaurant dish animation that seamlessly switches between breakfast and lunch with a simple click. Experience a delightful visual transition between meals!
+  </p>
+  </div>
+
+  
+<div data-aos ="fade-right" className='figButtons'>
+
+<a href="https://www.figma.com/file/0p87jLur8wqSuNi999dj4b/Resturant-dish-Breakfast-and-lunch-switch?type=design&node-id=0%3A1&mode=design&t=JgE8RF2xJ2ahEXnl-1" className='viewSite' target='_blank'>View Prototype</a>
+
+  </div>
+</div>
+
+
+
+
+<div data-aos ="fade-down" className="work3" >
+
+   <div className='smoothSkinPicDiv'  style={bgColor1} ><img src={smoothSkinPic} alt="" className='smoothSkinPic'/></div>
+
+<div className='text-center smoothTxt' >
+<h1 className='text-4xl text-center pb-3' ><span>Face Smooth</span></h1>
+<p>
+Experience the transformation with my advanced Photoshop skills! I've expertly smoothed and perfected skin texture, utilizing advanced tricks to turn rough and wrinkled skin into a flawless masterpiece. Elevate your image with the power of professional photo editing!
+</p>
+  </div>
+
+
+  <div data-aos ="fade-right"  className='downloadButtons'>
+
+  <a href={smoothSkinPic} download className='DownloadImgBtn'>Download Image</a>
+
+</div>
+</div>
+
+
 
 </section>
+
+<div className='viewmoreFlexer'>
+
+<Link to="/Works" className='viewMore2' style={bgColor2} data-aos ="fade-up" ><span style={font}>View More Works</span></Link>
+
+</div>
+
+</section>
+
 
 <div className='strecher'></div>
+
     </>
   )
 }

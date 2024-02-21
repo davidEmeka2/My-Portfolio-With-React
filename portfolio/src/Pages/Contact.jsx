@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Contact() {
+function Contact({font}) {
   return (
-    <div>Contact</div>
+    <>
+    <div style={font}>Contact</div>
+    <a href="#">google</a>
+    </>
   )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Works() {
+function Works({font}) {
   return (
-    <div>Works</div>
+    <div style={font}>Works</div>
   )
 }
 

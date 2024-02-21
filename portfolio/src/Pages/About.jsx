@@ -1,8 +1,8 @@
 import React from 'react'
 
-function About() {
+function About({font}) {
   return (
-    <div>About</div>
+    <p style={font}>About</p>
   )
 }
 

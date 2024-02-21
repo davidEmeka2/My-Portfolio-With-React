@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Services() {
+function Services({font}) {
   return (
-    <div>Services</div>
+    <div style={font}>Services</div>
   )
 }
 

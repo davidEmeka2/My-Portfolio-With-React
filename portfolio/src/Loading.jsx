@@ -4,7 +4,7 @@ import Home from './Pages/Home'
 
 
 
-function Loading() {
+function Loading({font}) {
 
     const [number, setNumber] = useState(0)
 
@@ -34,7 +34,7 @@ function Loading() {
     {loading && <div className='mainLoader' >
         <div className='loadbox' >
           <div className='loadScale'></div>
-        <p className='number text-5xl'>{number}%</p>
+        <p className='number text-5xl' style={font}>{number}%</p>
         </div>
         </div>
         }
