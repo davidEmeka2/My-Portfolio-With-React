@@ -10,10 +10,8 @@ html{
 }
 
 
-
-
 .strecher{
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
     width: 30px;
 }
@@ -1087,7 +1085,7 @@ html{
     position: fixed;
     top: 0px;
     z-index: -1000;
-
+    transition: 0.6s ease-in-out;
     opacity: 1;
 }
 
@@ -1103,6 +1101,7 @@ html{
     top: 0px;
     z-index: -1000;
     opacity: 1;
+    transition: 0.6s ease-in-out;
 }
 
 @keyframes opener {
@@ -1558,7 +1557,7 @@ html{
 
   
  }
-
+ 
 
  .work1, .work2, .work3{
     height: 400px;
@@ -1566,15 +1565,25 @@ html{
     /* border: 2px solid white; */
     color: white;
     flex-shrink: 0;
-  
-    
  }
+
+ 
+ 
 
  .work1{
     /* border: 1px solid white; */
     margin-top: 10px;
-    
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .work1FlexerA{
+   /* border: 2px solid red; */
+  height: 50%;
+   width: 100%;
+   display: flex;
+   gap: 15%;
+   justify-content: center;
  }
 
 
@@ -1590,13 +1599,11 @@ html{
 
 .todoListPic{
     height: 240px;
-    /* border: 2px solid white; */
+    /* border: 3px solid orange; */
     flex-shrink: 0;
-    position: absolute;
-    left: 50px;
-    top: 25px;
     width: 460px;
     border-radius: 10px;
+    
 }
 
  .todoListPic:hover::before{
@@ -1605,7 +1612,7 @@ html{
    background-color: white;
    transform: scale(50%);
    z-index: 90;
-   left: -350px;
+   left: -335px;
    top: -220px;
    border-radius: 5px;
  }
@@ -1613,13 +1620,26 @@ html{
 
  .todoTxt{
    /* border: 2px solid white; */
-   position: absolute;
-   top: 10px;
-   right: 50px;
-   width: 500px;
+   flex-shrink: 0;
+   width: 400px;
  }
 
- 
+ .work1FlexerB{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+ }
+
+ .workSpacer{
+    height: 30px;
+    /* border: 2px solid blueviolet; */
+    flex-shrink: 0;
+    width: 460px;
+ }
 
  .todoButtons{
     /* border: 2px solid white; */
@@ -1627,21 +1647,20 @@ html{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    gap:50px ;
+    gap:20px ;
     padding-top: 20px;
-   position: absolute;
-   bottom: 70px;
-   right: 100px;
+    width: 400px;
+    flex-shrink: 0;
  }
 
  .viewSite{
     height: 50px;
-    width: 160px;
+    width: 120px;
     border-radius: 25px;
    border: 1px solid white;
    padding: 10px;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding-left: 12px;
+   padding-right: 12px;
     text-align: center;
     color: white;
     z-index: 200;
@@ -1659,12 +1678,12 @@ html{
 
  .gitHubRepo{
     height: 50px;
-    width: 160px;
+    width: 120px;
     border-radius: 25px;
    border: 1px solid white;
    padding: 10px;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding-left: 12px;
+   padding-right: 12px;
     text-align: center;
     color: white;
     z-index: 200;
@@ -1680,39 +1699,40 @@ html{
     z-index: 200;
  }
 
+ 
+
+
+
 
  /* work 2 starts  */
 
 
 
  .work2{
-    /* border: 1px solid white; */
+    /* border: 3px solid green; */
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
  }
+
+ .work2FlexerA{
+    /* border: 2px solid red; */
+   height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+  }
 
  
 
  .ResturantPicDiv{
     height: 240px;
-    /* border: 2px solid white; */
     flex-shrink: 0;
-    position: absolute;
-    left: 50px;
-    top: 25px;
     width: 460px;
     border-radius: 10px;
     background-color: white;
- }
-
- .ResturantPicDiv:hover::before{
-    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1708298075/portfolio%20in%20react%20pseudo%20gifs/figma_resturant_ojjtvt.gif);
-    position: absolute;
-  
-   transform: scale(50%);
-   z-index: 90;
-   left: -350px;
-   top: -220px;
-   border-radius: 5px;
+    /* border: 3px solid orange; */
  }
 
  .figmaResturant{
@@ -1720,55 +1740,178 @@ html{
     width: 98%;
  }
 
+ .ResturantPicDiv:hover::before{
+    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1708298075/portfolio%20in%20react%20pseudo%20gifs/figma_resturant_ojjtvt.gif);
+    position: absolute;
+   transform: scale(50%);
+   z-index: 90;
+   left: -335px;
+   top: -220px;
+   border-radius: 5px;
+   
+ }
+
+
+ .figmaTxt{
+    /* border: 2px solid yellow; */
+    flex-shrink: 0;
+    width: 400px;
+  }
+
+  .work2FlexerB{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+ }
+
+
+ .workSpacer{
+    height: 30px;
+    /* border: 2px solid blueviolet; */
+    flex-shrink: 0;
+    width: 460px;
+ }
+
  .figButtons{
-    /* border: 2px solid white; */
+    /* border: 2px solid blue; */
     height: 100px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     padding-top: 20px;
-   position: absolute;
-   bottom: 90px;
-   right: 210px;
+   width: 400px;
  }
 
- .figmaTxt{
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    width: 500px;
+  .viewInFigmaBtn{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+   border: 1px solid white;
+   padding: 10px;
+   padding-left: 12px;
+   padding-right: 12px;
+    text-align: center;
+    color: white;
+    z-index: 200;
+    flex-shrink: 0;
   }
+
+  .viewInFigmaBtn:hover{
+    box-shadow: -2px 5px 10px #aaaa;
+    background-color: white;
+    color: black;
+    margin-top: -5px;
+    z-index: 200;
+ }
+
+
  
 /* work3 */
 
- .work3{
-    /* border: 2px solid white; */
-    margin-top: 10px;
+
+
+ .work3FlexerA{
+    /* border: 2px solid red; */
+   height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+  }
+ 
+
+  .work2FlexerB{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
  }
 
+
+ .workSpacer{
+    height: 30px;
+    /* border: 2px solid blueviolet; */
+    flex-shrink: 0;
+    width: 460px;
+ }
+
+ .figButtons{
+    /* border: 2px solid blue; */
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+   width: 400px;
+ }
+
+  .viewInFigmaBtn{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+   border: 1px solid white;
+   padding: 10px;
+   padding-left: 12px;
+   padding-right: 12px;
+    text-align: center;
+    color: white;
+    z-index: 200;
+    flex-shrink: 0;
+  }
+
+  .viewInFigmaBtn:hover{
+    box-shadow: -2px 5px 10px #aaaa;
+    background-color: white;
+    color: black;
+    margin-top: -5px;
+    z-index: 200;
+ }
+
+ .work3{
+    /* border: 3px solid palevioletred; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .work3FlexerA{
+    /* border: 2px solid red; */
+   height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+  }
+
+  
+ .smoothSkinPicDiv{
+    height: 320px;
+    /* border: 2px solid rebeccapurple; */
+   flex-shrink: 0;
+    width: 180px;
+    border-radius: 10px;
+    background-color: white;
+ }
  
 
  .smoothSkinPicDiv:hover::before{
     content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/c_scale,h_482,w_276/v1708297497/portfolio%20in%20react%20pseudo%20gifs/Main_Smooth_skin_p3uskk.gif);
     position: absolute;
-    transform: scale(100%);
+    transform: scale(95%);
     z-index: 90;
    top: -110px;
-   left: -15px;
+   left: 200px;
     border-radius: 10px;
  }
 
  
- .smoothSkinPicDiv{
-    height: 320px;
-    /* border: 2px solid white; */
-    position: absolute;
-    left: 200px;
-    top: 10px;
-    width: 180px;
-    border-radius: 10px;
-    background-color: white;
- }
  
 
  .smoothSkinPic{
@@ -1777,15 +1920,28 @@ html{
  }
 
  .smoothTxt{
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    width: 500px;
+    /* border: 2px solid greenyellow; */
+    flex-shrink: 0;
+    width: 400px;
  }
 
- .fonter{
-    color: white;
+ 
+ .work3FlexerB{
+    /* border: 2px solid red; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
  }
+
+ .work3Spacer{
+    height: 30px;
+    /* border: 2px solid blueviolet; */
+    flex-shrink: 0;
+    width: 180px;
+ }
+
 
  .downloadButtons{
     /* border: 2px solid white; */
@@ -1795,9 +1951,7 @@ html{
     justify-content: center;
     gap:50px ;
     padding-top: 20px;
-   position: absolute;
-   bottom: 70px;
-   right: 190px;
+    width: 400px;
  }
 
  .DownloadImgBtn{
@@ -1833,6 +1987,289 @@ html{
     z-index: 200;
  }
 
+ @media screen and (max-width:1170px){
+   
+    .work1FlexerA, .work2FlexerA{
+        gap: 12%;
+    }
+
+    .todoListPic:hover::before, .ResturantPicDiv:hover::before{
+        transform: scale(42%);
+        left: -380px;
+        top: -200px;
+    }
+
+    .work1FlexerB,.work2FlexerB{
+        gap: 12%;
+    }
+ }
+
+@media screen and (max-width:1070px) {
+    .work1FlexerA, .work2FlexerA{
+        gap: 7%;
+    }
+
+    .todoListPic:hover::before, .ResturantPicDiv:hover::before{
+        transform: scale(39%);
+        left: -400px;
+    }
+
+    .work1FlexerB, .work1FlexerB{
+        gap: 7%;
+    }
+}
+
+@media screen and (max-width:1005px){
+
+   .work3Spacer{
+    margin-top: -100px;
+   }
+
+  
+    
+
+    @keyframes opener2 {
+
+        0%{
+            transform: scaleX(175%);
+        }
+     
+        100%{
+            transform: scaleX(-150%);
+        }
+     
+        
+     }
+    
+
+     @keyframes opener3 {
+
+        0%{
+            transform: scaleX(-135%);
+        }
+     
+        100%{
+            transform: scaleX(120%);
+        }
+       
+     }
+
+    .worksSec{
+        background-color: white;
+    position: relative;
+    height: 460vh;
+    width: 100%;
+    top: 50px;
+    /* border: 5px solid blue; */
+    }
+    
+    .work1,.work2{
+        height: 750px;
+    }
+
+    .work3{
+        height:970px;
+    }
+
+    .work1FlexerA,.work2FlexerA,.work3FlexerA{
+        flex-direction: column;
+        align-items: center;
+        gap: 16%;
+    }
+
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        transform: scale(45%);
+        left: -20%;
+        top: -260px;
+    }
+
+    .smoothSkinPicDiv:hover::before{
+        transform: scale(85%);
+        z-index: 90;
+       top: -110px;
+       left: 300px;
+    }
+
+    .work1FlexerB,.work2FlexerB,.work3FlexerB{
+        flex-direction: column;
+        align-items: center;
+        gap: 7%;
+    }
+}
+
+@media screen and (max-width:905px){
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -30%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .smoothSkinPicDiv:hover::before{
+        left: 250px;
+    }
+}
+
+
+@media screen and (max-width:805px){
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -40%;
+    }
+}
+
+@media screen and (max-width:755px){
+    .smoothSkinPicDiv:hover::before{
+        left: 200px;
+    }
+}
+
+
+@media screen and (max-width:705px){
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -50%;
+    }
+}
+
+@media screen and (max-width:680px){
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -55%;
+    }
+}
+
+@media screen and (max-width:655px){
+    .todoListPic:hover::before ,.ResturantPicDiv:hover::before{
+        left: -58%;
+        transform: scale(48%);
+    }
+    .smoothSkinPicDiv:hover::before{
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:605px){
+    .todoListPic:hover::before ,.ResturantPicDiv:hover::before{
+        transform: scale(45%);
+        left: -65%;
+    }
+}
+
+
+
+@media screen and (max-width:555px){
+    .todoListPic:hover::before {
+        transform: scale(45%);
+        left: -78%;
+    }
+
+    .ResturantPicDiv:hover::before{
+         transform: scale(45%);
+        top: -272px;
+        left: -78%;
+    }
+
+    .smoothSkinPicDiv:hover::before{
+        left: 100px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .todoListPic:hover::before ,.ResturantPicDiv:hover::before{
+        left: -81%;
+    }
+}
+
+@media screen and (max-width:455px){
+    .smoothSkinPicDiv:hover::before{
+        left: 50px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .smoothTxt{
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    @keyframes opener2 {
+
+        0%{
+            transform: scaleX(155%);
+        }
+     
+        100%{
+            transform: scaleX(-150%);
+        }
+     
+        
+     }
+    
+    .todoListPic, .ResturantPicDiv{
+        width: 320px;
+        height: 190px;
+
+    }
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -121%;
+        transform: scale(40%);
+
+    }
+
+
+    .todoTxt,.figmaTxt{
+        width: 300px;
+    }
+
+    .workSpacer{
+        width: 300px;
+    }
+
+    .todoButtons,.figButtons{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:455px){
+    .smoothSkinPicDiv:hover::before{
+        left: 50px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .ResturantPicDiv:hover::before{
+        left: -141%;
+        transform: scale(40%);
+
+    }
+}
+
+@media screen and (max-width:355px){
+    .smoothSkinPicDiv:hover::before{
+        left: 0px;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+        left: -151%;
+    }
+}
+
+@media screen and (max-width:280px){
+    .todoListPic:hover::before{
+        left: -181%;
+    }
+    .ResturantPicDiv:hover::before{
+        left: -200%;
+        transform: scale(40%);
+    }
+
+    .todoTxt,.figmaTxt{
+        padding: 10px;
+    }
+}
+
+
  .viewmoreFlexer{
     position: absolute;
     height: 80px;
@@ -1841,18 +2278,18 @@ html{
     justify-content: center;
     align-items: center;
     /* border: 2px solid white ; */
-    bottom: 0px;
+    bottom: 30px;
  }
 
+
  .viewMore2{
-    height: 50px;
-    width: 160px;
-    border-radius: 25px;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
    border: 1px solid white;
     padding-top: 13px;
     text-align: center;
     color: white;
-
  }
 
  .viewMore2:hover{
@@ -1861,3 +2298,6 @@ html{
     color: black;
     margin-top: -5px;
  }
+
+ 
+ 
