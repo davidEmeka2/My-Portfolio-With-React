@@ -52,7 +52,6 @@ import img23_2 from "../assets/PortfolioBgImg2/image_part_023.png"
 import img24_2 from "../assets/PortfolioBgImg2/image_part_024.png"
 import img25_2 from "../assets/PortfolioBgImg2/image_part_025.png"
 import aboutImg from "../assets/aboutImg.png"
-
 import defautPic from "../assets/background Color icon/default.svg" 
 import northMiracle from "../assets/background Color icon/North Miracle.svg"
 import nightSky from "../assets/background Color icon/Night sky.svg"
@@ -72,7 +71,9 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 
   useEffect(()=>{
-    Aos.init()
+    Aos.init({
+      duration:800
+    })
     return () =>{
       Aos.refresh()
       Aos.refreshHard()
@@ -84,7 +85,7 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
   
   return (
     <>
-
+<section className='firstSec'>
     <section className='nameSection'>
       <h1 style={font}><span className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2}>I'm</span> <span className='david' style={fontColor2}>David</span> </h1>
     </section>
@@ -151,12 +152,12 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
       </div>
     </section>
 
-    
+    </section>
     
 <section className='customizeSec'>
 
-<div className="lighterBG" style={bgColor2}> </div>
-<div className="DarkerBG" style={bgColor2}> </div>
+<div className="lighterBG" style={bgColor2} data-aos="slide-right"> </div>
+<div className="DarkerBG" style={bgColor2} data-aos="slide-left"> </div>
 
 <div className='customizeH1 text-center' data-aos="fade-right" style={font}>Personalize Your Experience To Suit Your Style</div>
 
@@ -214,8 +215,8 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 <section className='aboutSec'>
 
 
-<div className="lighterBG2" style={bgColor2}> </div>
-<div className="DarkerBG2" style={bgColor2}> </div>
+<div className="lighterBG2"  data-aos="slide-right"> </div>
+<div className="DarkerBG2"  data-aos="slide-left"> </div>
 
 <div className='aboutPicAndTxt' style={font} data-aos ="fade-right">
   <div data-aos ="fade-right"><h1 className='text-7xl aboutH1' style={fontColor2}>About Me</h1></div>
@@ -234,8 +235,8 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 <section className='worksSec'>
 
-<div className="lighterBg3" style={bgColor2}> </div>
-<div className="DarkerBg3" style={bgColor2}> </div>
+<div className="lighterBG" style={bgColor2} data-aos="slide-right"> </div>
+<div className="DarkerBG" style={bgColor2} data-aos="slide-left"> </div>
 
 
 

@@ -235,6 +235,12 @@ li{
 
 /* hi */
 
+.firstSec{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
 .nameSection{
     margin-top: 50px;
     font-family: 'Exo', sans-serif;
@@ -1074,35 +1080,7 @@ html{
     
 }
 
-.lighterBG{
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    transform-origin:right;
-    animation: opener auto  ;
-    animation-timeline: --mov;
-    transform: scale(0);
-    position: fixed;
-    top: 0px;
-    z-index: -1000;
-    transition: 0.6s ease-in-out;
-    opacity: 1;
-}
 
-.DarkerBG{
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    transform-origin:left;
-    animation: opener auto  ;
-    animation-timeline: --mov;
-    transform: scale(0);
-    position: fixed;
-    top: 0px;
-    z-index: -1000;
-    opacity: 1;
-    transition: 0.6s ease-in-out;
-}
 
 @keyframes opener {
 
@@ -1117,15 +1095,31 @@ html{
    
 }
 
+.lighterBG{
+    background-color: blue;
+    height: 100%;
+    width: 52%;
+    position: absolute;
+}
+
+
+.DarkerBG{
+    background-color: blue;
+    height:100%;
+    width: 52%;
+    position: absolute;
+    right: 0;
+    
+}
 
 
 
 .customizeSec{
     position: relative;
     margin-top: 50px;
-    height: 750px;
+    height: 900px;
     width: 100%;
-    /* border: 1px solid black; */
+    /* border: 1px solid yellow; */
     z-index: 0;
 }
 
@@ -1134,6 +1128,7 @@ html{
     font-size: 40px;
     font-family: "Exo", sans-serif;
     color: white;
+    margin-top: 10px;
 }
 
 .themeH1{
@@ -1388,55 +1383,30 @@ html{
 }
 
 .aboutSec{
-    background-color: white;
+    background-color: black;
     position: relative;
-    height: 120vh;
+    height: 700px;
     width: 100%;
-    top: 120px;
 }
+
 
 
 
 .lighterBG2{
-    background-color: black;
-    width: 100%;
+    background-color: white;
     height: 100%;
-    transform-origin:right;
-    animation: opener2 auto  ;
-    animation-timeline: --mov;
-    transform: scaleX(50%);
+    width: 52%;
     position: absolute;
-    z-index: 1;
-    left: 0;
 }
 
 .DarkerBG2{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    transform-origin:left;
-    animation: opener2 auto  ;
-    animation-timeline: --mov;
-    transform: scaleX(50%);
+    background-color: white;
+    height:100%;
+    width: 52%;
     position: absolute;
-    z-index: 1;
- 
-    right: 0;
-    
+    right: 0;   
 }
 
-@keyframes opener2 {
-
-    0%{
-        transform: scaleX(175%);
-    }
- 
-    100%{
-        transform: scaleX(-95%);
-    }
- 
-    
- }
 
  .aboutPicAndTxt{
     position: absolute;
@@ -1494,7 +1464,7 @@ html{
  .worksSec{
     background-color: white;
     position: relative;
-    height: 270vh;
+    height: 1750px;
     width: 100%;
     top: 50px;
     /* border: 5px solid blue; */
@@ -2057,7 +2027,7 @@ html{
     .worksSec{
         background-color: white;
     position: relative;
-    height: 460vh;
+    height: 2800px;
     width: 100%;
     top: 50px;
     /* border: 5px solid blue; */
@@ -2095,7 +2065,13 @@ html{
         align-items: center;
         gap: 7%;
     }
+
+    .downloadButtons{
+        margin-bottom: 100px;
+    }
 }
+
+
 
 @media screen and (max-width:905px){
     .todoListPic:hover::before,.ResturantPicDiv:hover::before{
