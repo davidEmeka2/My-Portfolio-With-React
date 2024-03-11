@@ -11,8 +11,8 @@ html{
 
 
 .strecher{
-    height: 300px;
-    border: 1px solid black;
+    height: 100px;
+    /* border: 1px solid black; */
     width: 30px;
 }
 
@@ -22,6 +22,13 @@ height: 50000px;
 position: fixed;
 z-index: 100;
 background-color: white;
+}
+
+.generaldavesLogo{
+    height: 50px;
+    position: relative;
+    top: -50px;
+    left: 50px;
 }
 
 
@@ -1096,15 +1103,14 @@ html{
 }
 
 .lighterBG{
-    background-color: blue;
     height: 100%;
     width: 52%;
     position: absolute;
+   
 }
 
 
 .DarkerBG{
-    background-color: blue;
     height:100%;
     width: 52%;
     position: absolute;
@@ -1121,6 +1127,7 @@ html{
     width: 100%;
     /* border: 1px solid yellow; */
     z-index: 0;
+    padding-top: 20px;
 }
 
 .customizeH1{
@@ -1464,7 +1471,7 @@ html{
  .worksSec{
     background-color: white;
     position: relative;
-    height: 1750px;
+    height: 1850px;
     width: 100%;
     top: 50px;
     /* border: 5px solid blue; */
@@ -1565,6 +1572,10 @@ html{
 
  body{
     overflow: hidden;
+ }
+
+ html{
+    overflow-x: hidden;
  }
 
 .todoListPic{
@@ -1794,7 +1805,7 @@ html{
   }
  
 
-  .work2FlexerB{
+  .work3FlexerB{
     /* border: 2px solid red; */
     height: 50%;
     width: 100%;
@@ -1972,6 +1983,16 @@ html{
     .work1FlexerB,.work2FlexerB{
         gap: 12%;
     }
+
+    .smoothSkinPicDiv:hover::before{
+        left: 140px;
+       
+    }
+
+ }
+
+ @media screen and (max-width:1150px) {
+    
  }
 
 @media screen and (max-width:1070px) {
@@ -1987,13 +2008,24 @@ html{
     .work1FlexerB, .work1FlexerB{
         gap: 7%;
     }
+
+    .smoothSkinPicDiv:hover::before{
+        left: 120px;
+       
+    }
 }
 
 @media screen and (max-width:1005px){
 
    .work3Spacer{
     margin-top: -100px;
+    
    }
+
+   .smoothSkinPicDiv:hover::before{
+    left: 120px;
+  
+}
 
   
     
@@ -2037,8 +2069,9 @@ html{
         height: 750px;
     }
 
-    .work3{
-        height:970px;
+    .work3H{
+        height:570px;
+        /* border: 2px solid white; */
     }
 
     .work1FlexerA,.work2FlexerA,.work3FlexerA{
@@ -2056,7 +2089,7 @@ html{
     .smoothSkinPicDiv:hover::before{
         transform: scale(85%);
         z-index: 90;
-       top: -110px;
+       top: -130px;
        left: 300px;
     }
 
@@ -2067,7 +2100,7 @@ html{
     }
 
     .downloadButtons{
-        margin-bottom: 100px;
+        margin-top: 90px;
     }
 }
 
@@ -2088,7 +2121,7 @@ html{
 
 @media screen and (max-width:805px){
     .todoListPic:hover::before,.ResturantPicDiv:hover::before{
-        left: -40%;
+       left: -40%;
     }
 }
 
@@ -2184,10 +2217,15 @@ html{
         height: 190px;
 
     }
-    .todoListPic:hover::before,.ResturantPicDiv:hover::before{
+    .todoListPic:hover::before{
         left: -121%;
         transform: scale(40%);
 
+    }
+
+    .ResturantPicDiv:hover::before{
+        left: -131%;
+        transform: scale(40%);
     }
 
 
@@ -2275,5 +2313,404 @@ html{
     margin-top: -5px;
  }
 
+/* services section */
+
+ .servicesSec{
+    margin-top: 50px;
+    width: 100%;
+    height: 800px;
+    /* border: 2px solid violet; */
+    background-color: black;   
+    position: relative;
+ }
+
+ .lighterBG4{
+    background-color: white;
+    height: 800px;
+    width: 52%;
+    position: absolute;
+}
+
+.DarkerBG4{
+    background-color:white;
+    height:800px;
+    width: 52%;
+    position: absolute;
+    right: 0;   
+}
+
+ .servicesSecFlexer{
+  
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+ }
+
+ .servicesH1{
+    height: 60px;
+    width: 100%;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+ }
+
+ .responsive{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+ }
+
+ .responsImg{
+    height: 150px;
+    animation: smoothOpen 1s;
+ }
+
+ @keyframes smoothOpen {
+    0%{
+       transform: scale(70%);
+    }
+
+    100%{
+        transform: scale(100%);
+    }
+ }
+
+ .graphicsImg{
+    height: 180px;
+    animation: smoothOpen 1s;
+ }
+
+ .uiUxImg{
+    height: 180px;
+    animation: smoothOpen 1s;
+ }
+
+ .spasImg{
+    height: 195px;
+    animation: smoothOpen 1s;
+ }
+
+ .graphicsDes{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+ }
  
+ .ui{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+ }
+
+ .spas{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-size: 32px;
+    align-items: center;
+ }
+
+ @media screen and (max-width:795px) {
+    .spas{
+        font-size: 30px;
+    }
+
+ }
+
+ @media screen and (max-width:795px) {
+
+    .responsive{
+        font-size: 30px;
+        gap: 0;
+    }
+
+    .ui{
+       font-size: 30px; 
+       gap: 0;
+    }
+
+    .graphicsDes{
+        font-size: 30px;
+        gap: 0;
+    }
+
+    .spas{
+        font-size: 25px;
+        gap: 0;
+    }
+
+    .responsImg{
+        height: 130px;
+        animation: smoothOpen 1s;
+     }
+
+    .graphicsImg{
+        height: 150px;
+        animation: smoothOpen 1s;
+     }
+    
+     .uiUxImg{
+        height: 150px;
+        animation: smoothOpen 1s;
+     }
+    
+     .spasImg{
+        height: 150px;
+        animation: smoothOpen 1s;
+        flex-shrink: 0;
+     }
+ }
+
+ @media screen and (max-width:610px) {
+
+    .responsive{
+        font-size: 25px;
+    }
+
+    .ui{
+       font-size: 25px; 
+    }
+
+    .graphicsDes{
+        font-size: 25px;
+    }
+
+    .spas{
+        font-size: 22px;
+    }
+
+    .responsImg{
+        height: 110px;
+        animation: smoothOpen 1s;
+     }
+
+    .graphicsImg{
+        height: 130px;
+        animation: smoothOpen 1s;
+     }
+    
+     .uiUxImg{
+        height: 130px;
+        animation: smoothOpen 1s;
+     }
+    
+     .spasImg{
+        height: 120px;
+        animation: smoothOpen 1s;
+     }
+ }
+
+
+
+ .viewmoreFlexer2{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid  black ; */
+    bottom: 30px;
+   
+ }
+
+
+ .viewMore3{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+   /* border: 1px solid black; */
+    padding-top: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+ }
+
+ .viewMore3:hover{
+    box-shadow: -2px 5px 10px #aaaa;
+    background-color: white;
+    color: white;
+    margin-top: -5px;
+   
+ }
+
+ /* contactSec */
+
+
+.contactSec{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid orange; */
+}
+
+.constactSecFlexer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+
+}
+
+.letsH1{
+    color:white;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid turquoise; */
+    padding-left: 10%;
+    font-size: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+   
+}
+
+.transform{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid turquoise; */
+    color:white;
+    z-index: 10;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  gap: 28%;
+  text-align: center;
+}
+
+.socailHandles{
+    height:50px;
+    width: 250px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedIn{
+    height: 30px;
+    width: 100px;
+    /* border: 2px solid white; */
+    color: white;
+    display: flex;
+    gap: 10%;
+   
+ }
+
+ .arrow{
+    height: 11px;
+    margin-top: 5px;
+ }
+
+.behance{
+    height: 30px;
+    width: 100px;
+    /* border: 2px solid white; */
+    display: flex;
+    gap: 10%;
+   
+}
+
+@media screen and (max-width:1180px) {
+    .letsH1{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .letsH1{
+        font-size: 25px;
+    }
+
+    .transform{
+        font-size: 15px;
+        gap: 15%;
+    }
+
+}
+
+@media screen and (max-width:855px) {
+    .letsH1{
+        font-size: 25px;
+        flex-direction: column;
+    }
+
+    .transform{
+        font-size: 15px;
+        gap: 10%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .letsH1{
+        font-size: 22px;
+        flex-direction: column;
+    }
+
+    .transform{
+        font-size: 15px;
+        gap: 10%;
+    }
+
+}
+
+
+.viewMore4{
+   
+        height: 60px;
+        width: 200px;
+        border-radius: 30px;
+       border: 1px solid white;
+        padding-top: 13px;
+        text-align: center;
+        color: white;
+}
+
+.viewMore4:hover{
+    box-shadow: -2px 5px 10px #aaaa;
+    background-color: white;
+    color: black;
+    margin-top: -5px;
+ }
+
+.copyright{
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
  

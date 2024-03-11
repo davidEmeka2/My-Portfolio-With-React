@@ -1,0 +1,695 @@
+.aboutPage{
+    background-color: white;
+    position: relative;
+    height: 1150px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ImageAndH1s{
+   width: 100%;
+   height: 110px;
+   /* border: 2px solid black; */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 20%;
+}
+
+ .aboutPageImg{
+    height: 500px;
+    width:380px;
+    box-shadow: -5px 7px 10px #e7e5e5;
+    border-radius: 5px;
+    flex-shrink: 0;
+ }
+
+ .AboutFrame{
+    background-color: white;
+    width: 98%;
+    height: 98%;
+    border-radius: 5px;
+    
+ }
+
+ .myIntroAndAboutPageH1{
+   width: 400px;
+   height: 80px;
+   display: flex;
+   flex-direction: column;
+   /* border: 2px solid black; */
+   align-items: center ;
+   gap: 3%;
+   flex-shrink: 0;
+ }
+
+ .myIntro{
+  
+ }
+ 
+  .aboutPageH1{
+   height: 100px;
+   width: 100%;
+   text-align: center;
+  }
+
+.pAboutMe{
+   height: 200px;
+   width: 100%;
+   /* border: 2px solid purple; */
+   display: flex;
+   gap: 20%;
+   justify-content: center;
+}  
+
+.aboutSpacer{
+   height: 20px;
+   width: 370px;
+   /* border: 2px solid green; */
+   z-index: 2;
+   flex-shrink: 0;
+}
+
+
+ .aboutPageTxt{
+   /* border: 2px solid green; */
+    width: 400px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    flex-shrink: 0;
+ }
+
+ .DownloadResumeBtn{
+   width: 200px;
+   margin-top: 20px;
+   padding: 15px;
+   padding-bottom: 15px;
+   border-radius: 25px;
+   z-index: 2;
+   color: white;
+   flex-shrink: 0;
+   background-color: black;
+   
+}
+.nameAndPhoneAlpha{
+   margin-top: 20px;
+   height: 100px;
+   width: 100%;
+   /* border: 2px solid orangered; */
+   display: flex;
+   justify-content: center;
+   gap:20%;
+}
+
+.mainNameAndPhone{
+   flex-shrink: 0;
+   height: 100%;
+   width: 400px;
+   /* border: 2px solid teal; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding-left: 1%;
+}
+
+
+.myInterestAlpha{
+   margin-top: 20px;
+   height: 80px;
+   width: 100%;
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 20%;
+}
+
+.myInterest{
+   width: 400px;
+   height: 100%;
+   /* border: 2px solid seagreen; */
+   flex-shrink: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:10px;
+}
+
+.hobbies{
+   border-radius: 5px;
+}
+
+.hobbySpan{
+  border-radius:5px ;
+ padding: 7px;
+ 
+}
+
+/* My Expertise */
+
+.myExpertise{
+   height: 510px;
+   width: 100%;
+   /* border: 2px solid lawngreen; */
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.skill1{
+width: 100%;
+height: 70px;
+/* border: 2px solid blue; */
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+gap: 18%;
+}
+
+
+.skill{
+   height: 99%;
+   width: 400px;
+   /* border: 2px solid maroon; */
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   align-items: center; 
+}
+
+.skill-2{
+   height: 99%;
+   width: 400px;
+   /* border: 2px solid maroon; */
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   align-items: center;
+}
+
+.percentAndScaleDiv{
+   height: 50px;
+   width: 100%;
+   /* border: 2px solid peru; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
+}
+
+.WebDesignScale{
+   height: 10px;
+   width: 80%;
+   box-shadow: -1px 1px 5px rgb(163, 163, 163);
+   display: flex;
+   border-radius: 30px;
+}
+
+.scale{
+   height: 0;
+   width: 0;
+}
+
+.scaleX{
+
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo 2s;
+   transform-origin: left;
+   background-color: black;
+}
+
+
+
+
+@keyframes scrollInTo{
+   0%{
+      transform: scaleX(0%);
+      border-radius: 30px;
+   }
+
+   100%{
+      transform: scaleX(100%);
+      border-radius: 30px;
+   }
+}
+
+
+.scale-X{
+
+   height: 100%;
+   width: 0% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo2 1s;
+   transform-origin: left;
+}
+
+@keyframes scrollInTo2{
+   0%{
+      transform: scaleX(100%);
+      border-radius: 30px;
+   }
+
+   100%{
+
+      transform: scaleX(0%);
+      border-radius: 30px;
+   }
+}
+
+.scaleX2{
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo 2s;
+   transform-origin: left;
+}
+
+.scaleX3{
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo 2s;
+   transform-origin: left;
+}
+
+.scaleX4{
+   height: 100%;
+   width: 80% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo 2s;
+   transform-origin: left;
+}
+
+.scaleX6{
+   height: 100%;
+   width: 85% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo 2s;
+   transform-origin: left;
+}
+
+/* for mobile */
+
+.scaleX_{
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo_ 2s;
+   transform-origin: left;
+   background-color: blue;
+}
+
+@keyframes scrollInTo_ {
+   0%{
+      width: 0%;
+      transform: scaleX(0%);
+   }
+   100%{
+      width: 90%;
+      transform: scaleX(100%);
+   }
+}
+
+@keyframes scrollInTo_2 {
+   0%{
+      width: 0%;
+      transform: scaleX(0%);
+   }
+   100%{
+      width: 80%;
+      transform: scaleX(100%);
+   }
+}
+
+@keyframes scrollInTo_3 {
+   0%{
+      width: 0%;
+      transform: scaleX(0%);
+   }
+   100%{
+      width: 85%;
+      transform: scaleX(100%);
+   }
+}
+
+.scaleX2_{
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo_ 2s;
+   transform-origin: left;
+}
+
+.scaleX3_{
+   height: 100%;
+   width: 90% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo_ 2s;
+   transform-origin: left;
+}
+
+.scaleX4_{
+   height: 100%;
+   width: 80% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo_2 2s;
+   transform-origin: left;
+}
+
+.scaleX6_{
+   height: 100%;
+   width: 85% ;
+   border-radius: 30px;
+   transition: 0.5s ease-in;
+   animation: scrollInTo_3 2s;
+   transform-origin: left;
+}
+
+/* the scroller for all */
+
+@keyframes scrollInTo{
+   0%{
+      transform: scaleX(0%);
+   }
+
+   100%{
+      transform: scaleX(100%);
+   }
+}
+
+
+
+
+
+.skill2{
+width: 100%;
+height: 70px;
+/* border: 2px solid blue; */
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+gap: 18%;
+}
+
+.skill3{
+   width: 100%;
+   height: 70px;
+   /* border: 2px solid blue; */
+   flex-shrink: 0;
+   display: flex;
+justify-content: center;
+gap: 18%;
+}
+
+.skill4{
+   width: 100%;
+   height: 70px;
+   /* border: 2px solid blue; */
+   flex-shrink: 0;
+   display: flex;
+justify-content: center;
+gap: 18%;
+}
+
+.expertiseH1{
+   width: 100%;
+   /* border: 2px solid black; */
+   text-align: center;
+   margin-top: 50px;
+}
+
+
+
+
+/* My Expertise End */
+
+ .toServiceButton{
+   height: 60px;
+   width: 100%;
+   /* border: 2px solid black; */
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+ }
+
+
+
+ .viewWorks{
+   height: 50px;
+   width: 200px;
+   box-shadow: 1px 1px 10px #8d8c8caa;
+   border-radius: 25px;
+   padding: 15px;
+   text-align: center;
+   color: white;
+   font-size: 14px;
+   flex-shrink: 0;
+   flex-grow: 0;
+}
+
+.viewWorks:hover{
+   margin-top: -5px;
+   box-shadow: -2px 5px 10px #4e4d4daa;
+}
+
+@media screen and (max-width:1150px) {
+   .ImageAndH1s, .pAboutMe, .nameAndPhoneAlpha, .myInterestAlpha{
+      gap: 10%;
+   }  
+
+   .skill1, .skill2, .skill3 , .skill4{
+      gap: 7%;
+   }
+}
+
+@media screen and (max-width:950px) {
+   .ImageAndH1s, .pAboutMe, .nameAndPhoneAlpha, .myInterestAlpha{
+      gap: 6%;
+   }  
+
+   .skill1, .skill2, .skill3 , .skill4{
+      gap: 4%;
+   }
+}
+
+@media screen and (max-width:870px) {
+   .aboutPage{
+      height: 2750px;     
+  }
+
+  .ImageAndH1s{
+   width: 100%;
+   height: 610px;
+   /* border: 2px solid magenta; */
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+  }
+
+  .pAboutMe{
+   height: 300px;
+   width: 100%;
+   /* border: 2px solid purple; */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+}  
+
+.aboutPageTxt{
+   /* border: 2px solid green; */
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    flex-shrink: 0;
+ }
+
+ .nameAndPhoneAlpha{
+   margin-top: 20px;
+   height: 150px;
+   width: 100%;
+   /* border: 2px solid orangered; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap:20px;
+}
+
+.mainNameAndPhone{
+   flex-shrink: 0;
+   height: 100px;
+   width: 400px;
+   /* border: 2px solid teal; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding-left: 1%;
+}
+
+
+   .myInterestAlpha{
+      margin-top: 20px;
+      height: 150px;
+      width: 100%;
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+
+   .myInterest{
+      width: 400px;
+      height: 90px;
+      /* border: 2px solid seagreen; */
+      flex-shrink: 0;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-bottom:10px;
+   }  
+
+   .myExpertise{
+      height: 1400px;
+      gap: 50px;
+   }
+
+   .skill1{
+      width: 100%;
+      height: 250px;
+      /* border: 2px solid blue; */
+      flex-shrink: 0;
+      display: flex;
+     align-items: center;
+      gap: 18%;
+      flex-direction: column;
+      }
+
+      .skill{
+         height: 100px;
+         width: 400px;
+         /* border: 2px solid maroon; */
+         display: flex;
+         flex-direction: column;
+         flex-shrink: 0;
+         align-items: center; 
+      }
+
+      .skill2{
+         width: 100%;
+         height: 250px;
+         /* border: 2px solid blue; */
+         flex-shrink: 0;
+         display: flex;
+        align-items: center;
+         gap: 18%;
+         flex-direction: column;
+    }
+
+    .skill-2{
+      height: 100px;
+         width: 400px;
+         /* border: 2px solid maroon; */
+         display: flex;
+         flex-direction: column;
+         flex-shrink: 0;
+         align-items: center; 
+    }
+
+    .skill3{
+      width: 100%;
+      height: 250px;
+      /* border: 2px solid blue; */
+      flex-shrink: 0;
+      display: flex;
+     align-items: center;
+      gap: 18%;
+      flex-direction: column;
+ }
+
+  
+    .skill4{
+      width: 100%;
+      height: 250px;
+      /* border: 2px solid blue; */
+      flex-shrink: 0;
+      display: flex;
+     align-items: center;
+      gap: 18%;
+      flex-direction: column;
+ }
+
+}
+
+@media screen and (max-width:480px){
+   .myIntroAndAboutPageH1{
+      width: 300px;
+   }
+
+   .aboutPageImg{
+      height: 370px;
+      width:270px;
+      box-shadow: -5px 7px 10px #e7e5e5;
+      border-radius: 5px;
+      flex-shrink: 0;
+   }
+
+   .aboutPageTxt{
+      width: 300px;
+   }
+
+   .mainNameAndPhone{
+      width: 300px;
+   }
+
+   .myInterest{
+      width: 300px;
+   }
+
+   .hobbySpan{
+     padding: 7px;
+     padding-bottom: 26px;
+     padding-left:10px ;
+     padding-right:12px ;
+    }
+
+    .skill{
+     
+      width: 300px;
+     
+   }
+
+   .skill-2{
+      width: 300px;
+   }
+    
+}
+
+.strecher2{
+   height: 150px;
+   /* border: 1px solid black; */
+   width: 30px;
+}

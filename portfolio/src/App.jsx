@@ -219,9 +219,13 @@ useEffect(()=>{
    
 
       <BrowserRouter>
-      
+     
       <Loading font={font}/>
+
       <Nav font={font} themeChanger={themeChanger} bgColor1={bgColor1} bgColor2={bgColor2} fontColor1={fontColor1} fontColor2={fontColor2}/>
+
+      <img src="https://res.cloudinary.com/dyrzp2wi6/image/upload/v1685069595/logo_black_cg3dqp.png" alt="" className='generaldavesLogo' />
+
       <Routes>
         <Route path='/' element={<Home Playfair={Playfair} font={font} defaultFont={defaultFont} Roboto={Roboto} Opensans={Opensans} themeChanger={themeChanger} bgColor1={bgColor1} bgColor2={bgColor2} fontColor1={fontColor1} fontColor2={fontColor2} konoha={konoha} bigMoney={bigMoney} forever={forever} pauser={pauser} themeChanger2={themeChanger2} themeChanger3={themeChanger3} defaultTheme={defaultTheme}/>}></Route> 
 
@@ -234,6 +238,7 @@ useEffect(()=>{
         <Route path='/Contact' element={<Contact font={font} themeChanger={themeChanger} bgColor1={bgColor1} bgColor2={bgColor2} fontColor1={fontColor1} fontColor2={fontColor2}/>}></Route>
       </Routes>
       <AnimatedCursor/>
+      
       </BrowserRouter>
     </>
   )

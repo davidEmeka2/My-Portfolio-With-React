@@ -61,9 +61,15 @@ import musicIcon from "../assets/music icon.png"
 import smoothSkinPic from "../assets/smoothSkin.jpg"
 import figmaProjectPic from "../assets/Figma resturant work.png"
 import todoListPic from "../assets/todo list.png"
+import responsiveImage from "../assets/responsiveWebDesignImage-removebg-preview.png"
+import graphicsImage from "../assets/graphicsDesignPics.png"
+import uiUx from "../assets/UX-UI-DesignPic.png"
+import spa from "../assets/Single-page-applicationPic.png"
+import arrow from "../assets/arrow-up-right.png"
 
 import Aos from "aos"
 import 'aos/dist/aos.css'
+
 
 
 function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgColor1, bgColor2, fontColor1, fontColor2, konoha, bigMoney, forever, pauser,themeChanger2,themeChanger3,defaultTheme}) {
@@ -80,17 +86,23 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
     }
   },[])
 
+const [imager, setImager] = useState(false)
+const [imager2, setImager2] = useState(false)
+const [imager3, setImager3] = useState(false)
+const [imager4, setImager4] = useState(false)
+
 
   
+
   
   return (
     <>
 <section className='firstSec'>
-    <section className='nameSection'>
-      <h1 style={font}><span className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2}>I'm</span> <span className='david' style={fontColor2}>David</span> </h1>
+    <section className='nameSection' data-aos="fade-right">
+      <h1 style={font}><span data-aos="fade-right" className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2} data-aos="fade-right" >I'm</span> <span className='david' style={fontColor2} data-aos="fade-right" >David</span> </h1>
     </section>
 
-    <h1 className='youre' style={font}><span style={fontColor2}><p>You're about to embark on a journey through my imagination.</p></span></h1>
+    <h1 className='youre' style={font}><span style={fontColor2} ><p data-aos="fade-up">You're about to Explore my imagination!</p></span></h1>
 
 
 
@@ -163,7 +175,7 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 <div className='themeH1 text-center' data-aos="fade-right" style={font}><p>Select Theme</p></div>
 
-<section className='themeOptions' data-aos="fade-down">
+<section className='themeOptions' data-aos="fade-right">
   <div data-aos ="fade-right" className='themeDefault' onClick={defaultTheme}><img src={defautPic} alt="" className='aThemePic'/></div>
   <div data-aos ="fade-right" className='theme1' onClick={themeChanger}><img src={northMiracle} alt="" className='aThemePic'/></div>
   <div data-aos ="fade-right" className='theme2' onClick={themeChanger2}><img src={nightSky} alt="" className='aThemePic'/></div>
@@ -180,7 +192,7 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 <div className='fontH1 text-center' data-aos="fade-right" style={font}><p>Select Font Style</p></div>
 
-<section className='fontOptions' data-aos="fade-down">
+<section className='fontOptions' data-aos="fade-right">
   <div data-aos ="fade-right" className='fontDefault' onClick={defaultFont}>Aa</div>
   <div data-aos ="fade-right" className='font1' onClick={Opensans}><p>Aa</p></div>
   <div data-aos ="fade-right" className='font2' onClick={Roboto}><p>Aa</p></div>
@@ -196,7 +208,7 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 <div className='bgMusicH1 text-center' data-aos="fade-right"  style={font}><p>Select Background Music</p></div>
 
-<section className='bgMusicOptions' data-aos="fade-down">
+<section className='bgMusicOptions' data-aos="fade-right">
   <div data-aos ="fade-right" className='bgMusicStop' onClick={pauser}><div className="stopIcon"></div></div>
   <div data-aos ="fade-right" className='bgMusic1' onClick={konoha}><img src={musicIcon} alt="" className='musicIcon'/></div>
   <div data-aos ="fade-right" className='bgMusic2' onClick={bigMoney}><img src={musicIcon} alt="" className='musicIcon'/></div>
@@ -212,11 +224,11 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 
 
 </section>
-<section className='aboutSec'>
+<section className='aboutSec' style={bgColor2}>
 
 
-<div className="lighterBG2"  data-aos="slide-right"> </div>
-<div className="DarkerBG2"  data-aos="slide-left"> </div>
+<div className="lighterBG2" data-aos="slide-right"> </div>
+<div className="DarkerBG2" data-aos="slide-left"> </div>
 
 <div className='aboutPicAndTxt' style={font} data-aos ="fade-right">
   <div data-aos ="fade-right"><h1 className='text-7xl aboutH1' style={fontColor2}>About Me</h1></div>
@@ -224,10 +236,10 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
   <div className='aboutImg' style={bgColor2} data-aos ="fade-right"><div className='AboutFrame'><img src={aboutImg} alt="" style={{height:"97%",width:"97%"}}/></div></div>
 
 
-<div className='aboutTxt' style={fontColor2} data-aos ="fade-up"><p> I'm Chukwuemeka David, a front-end enthusiast with experience in graphics design, UI/UX, and front-end web development.</p></div>
+<div className='aboutTxt' style={fontColor2} data-aos ="fade-up"><p> A front-end enthusiast with experience in graphics design, UI/UX, and front-end web development.</p></div>
 
 
-<Link to="/About" className='viewMore' style={bgColor2} data-aos ="fade-right"><span style={{color:"white"}}>View More</span></Link>
+<Link to="/About"  className='viewMore' style={bgColor2} data-aos ="fade-right"><span style={{color:"white"}}>View More</span></Link>
 
 </div>
 
@@ -245,6 +257,7 @@ function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgCo
 <div data-aos ="fade-right" style={font}><h1 className='text-7xl text-center worksH1'>Works</h1></div>
 
 <div data-aos ="fade-down" className="work1">
+  
   {/* Works1 Flexer */}
 
   <div className='work1FlexerA' >
@@ -357,8 +370,97 @@ Experience the transformation with my advanced Photoshop skills! I've expertly s
 </section>
 
 
+<section className='servicesSec' style={bgColor2} >
+
+<div className="lighterBG4" data-aos="slide-right"> </div>
+<div className="DarkerBG4" data-aos="slide-left"> </div>
+
+<div className='servicesSecFlexer' style={font}>
+
+<div className='servicesH1' data-aos ="fade-right" style={fontColor2}><h1 >Services</h1></div>
+
+  <div className='responsive' data-aos ="fade-right" style={fontColor2} onMouseOver={()=>{
+    setImager(true)
+  }} onMouseLeave={()=>{
+    setImager()
+  }}> <h1>Responsive</h1> <div> {imager &&<img src={responsiveImage} alt="" className='responsImg'/>}</div> <h1> Web Design</h1> </div>
+
+  <div className='graphicsDes' data-aos ="fade-right" style={fontColor2} onMouseOver={()=>{
+    setImager2(true)
+  }} onMouseLeave={()=>{
+    setImager2()
+  }}> <h1>Graphics</h1> <div>{imager2 &&<img src={graphicsImage} alt="" className='graphicsImg'/>}</div> <h1>Design</h1> </div>
+
+  <div className='ui' data-aos ="fade-right" style={fontColor2} onMouseOver={()=>{
+    setImager3(true)
+  }} onMouseLeave={()=>{
+    setImager3()
+  }}> <h1>UI/</h1> <div>{imager3 &&<img src={uiUx} alt="" className='uiUxImg'/>}</div> <h1>UX</h1> </div>
+
+  <div className='spas' data-aos ="fade-right" style={fontColor2} onMouseOver={()=>{
+    setImager4(true)
+  }} onMouseLeave={()=>{
+    setImager4()
+  }}> <h1>Single Page</h1> <div>{imager4 &&<img src={spa} alt="" className='spasImg'/>}</div> <h1>Applications</h1></div>
+
+  <div className='viewmoreFlexer2'>
+
+<Link to="/Services" className='viewMore3'  data-aos ="fade-right" style={bgColor2} ><span style={font}>View All Services</span></Link>
+
+</div>
+
+</div>
+
+</section>
+
+<section className='contactSec' style={font}>
+
+<div className="lighterBG" style={bgColor2} data-aos="slide-right"> </div>
+<div className="DarkerBG" style={bgColor2} data-aos="slide-left"> </div>
+
+  <section className='constactSecFlexer'>
+    <div className='letsH1' ><h1 data-aos ="fade-right">Let's Collaborate and Elevate!</h1> <h1 data-aos ="fade-right">igwezedavid@gmail.com</h1></div>
+
+    <div className='transform'>
+
+      <p data-aos ="fade-right"> Transforming Your Ideas into Stunning Realities!</p> 
+
+<div className='socailHandles'>
+      <div className='linkedIn' data-aos ="fade-right">
+
+        <a href="https://www.linkedin.com/in/chukwuemeka-david-4309ab2b3/" target='_blank'>LinkedIn
+      </a>
+
+      <img src={arrow} alt="" className='arrow'/>
+      
+      </div>
+
+      <div className='behance' data-aos ="fade-right">
+
+        <a href="https://www.behance.net/davidemeka4" target='_blank'>Behance
+      </a>
+
+      <img src={arrow} alt="" className='arrow'/>
+
+      </div>
+
+  </div>
+     
+</div>
+
+<div className='viewmoreFlexer2'>
+<Link to="/Contact" className='viewMore4'  data-aos ="fade-right"  ><span style={font}>Let's Get In Touch</span></Link> </div>
+
+    <div className='reachOut'></div>
+    </section>
+
+    
+  
+</section>
+
 <div className='strecher'></div>
 
+<div className='copyright' style={font}><p style={fontColor2}> Copyright © 2024 General Dave</p></div>
     </>
   )
 }
