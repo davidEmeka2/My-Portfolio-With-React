@@ -2,11 +2,95 @@
 .worksPageSec{
     background-color: white;
     position: relative;
-    height: 2150px;
+    height: 3350px;
     width: 100%;
     top: 50px;
     /* border: 5px solid blue; */
 }
+
+.worksPageSec_Web{
+    background-color: white;
+    position: relative;
+    height: 1550px;
+    width: 100%;
+    top: 50px;
+    /* border: 5px solid blue; */
+}
+
+.worksPageSec_grap{
+    background-color: white;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    top: 50px;
+    /* border: 5px solid blue; */
+}
+
+.worksPageSec_ui{
+    background-color: white;
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    top: 50px;
+    /* border: 5px solid blue; */
+}
+
+.worksPageSec_photo{
+    background-color: white;
+    position: relative;
+    height: 730px;
+    width: 100%;
+    top: 50px;
+    /* border: 5px solid blue; */
+}
+
+.allWorks{
+    top:100px;
+    position: absolute;
+    height: 94%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+   gap: 70px;
+padding-top: 60px;
+ }
+
+ .allWorks_grap{
+    top:100px;
+    position: absolute;
+    height: 94%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+   gap: 70px;
+padding-top: 50px;
+ }
+
+ .allWorks_ui{
+    top:100px;
+    position: absolute;
+    height: 94%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+   gap: 70px;
+padding-top: 50px;
+ }
+
+ .allWorks_photo{
+    top:100px;
+    position: absolute;
+    height: 94%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+   gap: 70px;
+padding-top: 50px;
+ }
 
 .smoothWorkTxt{
     /* border: 2px solid greenyellow;  */
@@ -23,6 +107,42 @@
     border-radius: 10px;
     background-color: white;
  }
+
+ @media screen and (max-width:1005px){
+
+    .worksPageSec{
+     height: 5100px;
+     }
+
+     .worksPageSec_Web{
+        height: 2350px;
+    }
+
+    .worksPageSec_grap{
+        height: 900px;
+    }
+
+    .worksPageSec_ui{
+        height: 1750px;
+    }
+
+    .worksPageSec_photo{
+        height: 1000px;
+    }
+    
+    .allWorks_grap{
+    padding-top: 120px;
+     }
+    
+     .allWorks_ui{
+    padding-top: 90px;
+     }
+
+     .allWorks_photo{
+        padding-top: 190px;
+     }
+     
+} 
  
 
  .smoothSkinPicDiv2:hover::before{
@@ -35,17 +155,7 @@
     border-radius: 10px;
  }
 
-@media screen and (max-width:1005px){
 
-    .worksPageSec{
-         background-color: white;
-     position: relative;
-     height: 3800px;
-     width: 100%;
-     top: 50px;
-     /* border: 5px solid blue; */
-     }
-} 
 
 .selectCategory{
     display: flex;
@@ -54,7 +164,7 @@
     justify-content: center;
     height: 60px;
     padding-bottom: 30px;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
 }
 
 /* from works 4 */
@@ -91,7 +201,7 @@
     overflow-x: hidden;
  }
 
-.fightingGamePic{
+.fightingGamePic, .provestPic, .davidsWebstore, .welcomeDesignPic{
     height: 240px;
     /* border: 3px solid orange; */
     flex-shrink: 0;
@@ -99,6 +209,28 @@
     border-radius: 10px;
     
 }
+
+.davidsWebstore:hover::before{
+    position: absolute;
+    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1711064370/portfolio%20in%20react%20pseudo%20gifs/Video_24-03-22_00-37-32_mcznmp.gif);
+   background-color: white;
+   transform: scale(50%);
+   z-index: 90;
+   left: -335px;
+   top: -220px;
+   border-radius: 5px;
+ }
+
+ .welcomeDesignPic:hover::before{
+    position: absolute;
+    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1711111718/portfolio%20in%20react%20pseudo%20gifs/Video_24-03-22_13-42-46_gwvmy6.gif);
+   background-color: white;
+   transform: scale(50%);
+   z-index: 90;
+   left: -335px;
+   top: -220px;
+   border-radius: 5px;
+ }
 
  .fightingGamePic:hover::before{
     position: absolute;
@@ -111,6 +243,17 @@
    border-radius: 5px;
  }
 
+
+ .provestPic:hover::before{
+    position: absolute;
+    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1711058677/portfolio%20in%20react%20pseudo%20gifs/Video_24-03-21_23-01-56_edueuh.gif);
+   background-color: white;
+   transform: scale(50%);
+   z-index: 90;
+   left: -335px;
+   top: -220px;
+   border-radius: 5px;
+ }
 
  .todoTxt{
    /* border: 2px solid white; */
@@ -239,7 +382,7 @@
         gap: 12%;
     }
 
-    .fightingGamePic:hover::before, .ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before, .ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         transform: scale(42%);
         left: -380px;
         top: -200px;
@@ -251,7 +394,7 @@
 
     .smoothSkinPicDiv2:hover::before{
         left: 140px;
-        border: 2px solid palegreen;
+        /* border: 2px solid palegreen; */
     }
  }
 
@@ -260,7 +403,7 @@
         gap: 7%;
     }
 
-    .fightingGamePic:hover::before, .ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before, .ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         transform: scale(39%);
         left: -400px;
     }
@@ -353,7 +496,7 @@
         gap: 16%;
     }
 
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         transform: scale(45%);
         left: -20%;
         top: -260px;
@@ -386,7 +529,7 @@
 
 
 @media screen and (max-width:905px){
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -30%;
     }
 }
@@ -400,8 +543,9 @@
 
 
 @media screen and (max-width:805px){
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before,.davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -40%;
+        top: -270px;
     }
 }
 
@@ -413,19 +557,19 @@
 
 
 @media screen and (max-width:705px){
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -50%;
     }
 }
 
 @media screen and (max-width:680px){
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -55%;
     }
 }
 
 @media screen and (max-width:655px){
-    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -58%;
         transform: scale(48%);
     }
@@ -435,7 +579,7 @@
 }
 
 @media screen and (max-width:605px){
-    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         transform: scale(45%);
         left: -65%;
     }
@@ -444,24 +588,35 @@
 
 
 @media screen and (max-width:555px){
-    .fightingGamePic:hover::before {
-        transform: scale(45%);
-        left: -78%;
+    .fightingGamePic:hover::before{
+        transform: scale(40%);
+        left: -75%;
+        top: -295px;
     }
-
-    .ResturantPicDiv:hover::before{
+    .provestPic:hover::before, .davidsWebstore:hover::before{
+        transform: scale(40%);
+        left: -75%;
+        top: -305px;
+    }
+    .ResturantPicDiv:hover::before {
          transform: scale(45%);
         top: -272px;
         left: -78%;
     }
+    .welcomeDesignPic:hover::before{
+        transform: scale(45%);
+        top: -305px;
+        left: -78%;
+    }
 
-    .smoothSkinPicDiv2:hover::before{
+    .smoothSkinPicDiv2:hover::before {
         left: 100px;
     }
+    
 }
 
 @media screen and (max-width:540px){
-    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before ,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -81%;
     }
 }
@@ -473,6 +628,11 @@
 }
 
 @media screen and (max-width:480px){
+
+    .selectCategory{
+        font-size: 13px;
+        gap: 7px;
+    }
 
     .smoothWorkTxt{
         margin-top: 20px;
@@ -493,19 +653,33 @@
         
      }
     
-    .fightingGamePic, .ResturantPicDiv{
+    .fightingGamePic, .ResturantPicDiv, .provestPic, .davidsWebstore , .welcomeDesignPic{
         width: 320px;
         height: 190px;
 
     }
     .fightingGamePic:hover::before{
-        left: -121%;
+        left: -99%;
         transform: scale(40%);
+    }
 
+    .davidsWebstore:hover::before{
+        left: -111%;
+        transform: scale(40%);
+    }
+
+    .provestPic:hover::before{
+        left: -111%;
+        transform: scale(40%);
     }
 
     .ResturantPicDiv:hover::before{
-        left: -131%;
+        left: -111%;
+        transform: scale(40%);
+    }
+
+    .welcomeDesignPic:hover::before{
+        left: -111%;
         transform: scale(40%);
     }
 
@@ -529,11 +703,89 @@
     }
 }
 
+@media (max-width:390px) {
+
+    .fightingGamePic:hover::before{
+        left: -103%;
+        transform: scale(40%);
+    }
+    
+    .davidsWebstore:hover::before{
+        left: -121%;
+        transform: scale(40%);
+    }
+    
+    .provestPic:hover::before{
+        left: -125%;
+        transform: scale(40%);
+    }
+    
+    .ResturantPicDiv:hover::before{
+        left: -125%;
+        transform: scale(40%);
+    
+    }
+
+    .welcomeDesignPic:hover::before{
+        left: -125%;
+        transform: scale(40%);
+    }
+    }
+
+@media (max-width:375px) {
+
+.fightingGamePic:hover::before{
+    left: -109%;
+    transform: scale(40%);
+}
+
+.davidsWebstore:hover::before{
+    left: -131%;
+    transform: scale(40%);
+}
+
+.provestPic:hover::before{
+    left: -131%;
+    transform: scale(40%);
+}
+
+.welcomeDesignPic:hover::before{
+    left: -131%;
+    transform: scale(40%);
+}
+
+.ResturantPicDiv:hover::before{
+    left: -131%;
+    transform: scale(40%);
+
+}
+}
+
 @media screen and (max-width:360px){
     .ResturantPicDiv:hover::before{
         left: -141%;
         transform: scale(40%);
 
+    }
+
+    .fightingGamePic:hover::before{
+        left: -116%;
+        transform: scale(40%);
+    }
+    
+    .davidsWebstore:hover::before{
+        left: -141%;
+        transform: scale(40%);
+    }
+    
+    .provestPic:hover::before{
+        left: -141%;
+        transform: scale(40%);
+    }
+    
+    .welcomeDesignPic:hover::before{
+        left: -141%;
+        transform: scale(40%);
     }
 }
 
@@ -545,13 +797,13 @@
 
 
 @media screen and (max-width:320px){
-    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before{
+    .fightingGamePic:hover::before,.ResturantPicDiv:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -151%;
     }
 }
 
 @media screen and (max-width:280px){
-    .fightingGamePic:hover::before{
+    .fightingGamePic:hover::before, .provestPic:hover::before, .davidsWebstore:hover::before, .welcomeDesignPic:hover::before{
         left: -181%;
     }
     .ResturantPicDiv:hover::before{

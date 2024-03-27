@@ -1,0 +1,45 @@
+.servicesPageH1{
+    height: 90px;
+    width: 100%;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+ }
+
+ .servicesSecPageFlexer{
+  
+        width: 100%;
+        height: 2550px;
+        
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+
+        gap: 70px;
+ }
+
+ .textForServices{
+       z-index: 1;
+       width: 500px;
+       margin-top: -30px;
+       flex-shrink: 0;
+ }
+
+ @media screen and (max-width:480px) {
+
+       .servicesSecPageFlexer{
+              height: 2950px;  
+       }
+       .textForServices{
+              width: 300px;
+       }
+ }
+
+ @media screen and (max-width:300px) {
+       .textForServices{
+              width: 250px;
+       }
+ }
+ 

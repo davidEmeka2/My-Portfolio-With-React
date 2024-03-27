@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import img1 from "../assets/portfolioBgImg1/image_part_001.png"
 import img2 from "../assets/portfolioBgImg1/image_part_002.png"
@@ -92,7 +92,38 @@ const [imager3, setImager3] = useState(false)
 const [imager4, setImager4] = useState(false)
 
 
-  
+const myRefElement = useRef(null)
+const [smoother, setSmoother] = useState("")
+
+const handleClick =()=>{
+  if(myRefElement.current){
+
+   myRefElement.current.scrollTo({
+    left:myRefElement.current.scrollLeft + 3000,
+    behavior:'smooth'})
+    setSmoother("#smooth")
+  }
+
+ 
+
+}
+
+const mouseWheel =(e)=>{
+  if(myRefElement.current){
+    myRefElement.current.scrollLeft += e.deltaY
+    myRefElement.current.style.scrollBehaviour = "auto"
+  }
+}
+
+const handleClick2 = ()=>{
+  if(myRefElement.current){
+
+    myRefElement.current.scrollTo({
+     left:myRefElement.current.scrollLeft - 3000,
+     behavior:'smooth'})
+     setSmoother("#smooth")
+   }
+}
 
   
   return (
@@ -411,7 +442,78 @@ Experience the transformation with my advanced Photoshop skills! I've expertly s
 
 </div>
 
+<h1 className='text-5xl text-center mt-6' style={fontColor2} data-aos="fade-right"><span style={font}>Reviews</span></h1>
+
 </section>
+
+
+<section className='reviews-main' style={font} data-aos="fade-right">
+
+  <div className='arrow-left' onClick={handleClick2}></div>
+
+<div className='reviews mt-10' id={smoother} ref={myRefElement} style={fontColor2} onWheel={mouseWheel}>
+
+<div className="pic" style={font} data-aos="fade-right">
+<h1 className='h1fontsizer' >Adaigwe Adiel</h1>
+
+<p>Exceptional work! My website turned out exactly how I envisioned it. The design is modern, the navigation seamless, and the responsiveness is top-notch. Highly recommend!
+</p>
+
+</div>
+
+<div className="pic" style={font} data-aos="fade-right">
+
+<h1 className='h1fontsizer'>John Wilson</h1>
+
+<p>
+  Incredible transformation! My website went from outdated to outstanding thanks to this developer's expertise. The new design is sleek, user-friendly, and has already boosted engagement. Thank you!
+</p> 
+
+</div>
+
+<div className="pic" style={font} data-aos="fade-right">
+<h1 className='h1fontsizer'>Emily Moore</h1>
+
+<p>
+Absolutely stunning graphics! The designs perfectly capture the essence of my brand and have taken my visual identity to the next level. Professional, creative, and delivered with precision. Couldn't be happier!
+</p> 
+
+</div>
+
+<div className="pic" style={font} data-aos="fade-right">
+
+<h1 className='h1fontsizer'>Samantha Taylor</h1>
+
+<p>
+A total game-changer! This developer breathed new life into my website with his redesign. The layout is intuitive, and the overall user experience has significantly improved. Highly impressed!
+</p> 
+
+</div>
+
+<div className="pic" style={font} data-aos="fade-right">
+
+<h1 className='h1fontsizer'> Benjamin Rodriguez</h1>
+
+<p>
+Creative genius at work! The graphics created for my project are simply outstanding. Each design reflects a deep understanding of my brand and has added a distinctive flair to my visuals. Remarkable talent!
+</p> 
+
+</div>
+
+<div className="pic" style={font} data-aos="fade-right">
+<h1 className='h1fontsizer'>Chigozie Okoro</h1>
+
+<p>
+The website surpassed my expectations in every aspect. It's visually captivating, functions seamlessly, and has already garnered praise from users. A true master of Creating Websites!
+</p> 
+</div>
+
+</div>
+
+ <div className='arrow-right' onClick={handleClick}></div>
+
+</section>
+
 
 <section className='contactSec' style={font}>
 
@@ -458,7 +560,7 @@ Experience the transformation with my advanced Photoshop skills! I've expertly s
   
 </section>
 
-<div className='strecher'></div>
+<div className='strecher2'></div>
 
 <div className='copyright' style={font}><p style={fontColor2}> Copyright © 2024 General Dave</p></div>
     </>
