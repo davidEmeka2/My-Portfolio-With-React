@@ -305,7 +305,7 @@ const form = useRef();
 <input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling}/>
 </div>
 
-<button className='sendButton'>Send Message</button>
+<button className='sendButton' style={fontColor2}>Send Message</button>
 
 </form>
 
