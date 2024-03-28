@@ -355,21 +355,22 @@ padding-top: 50px;
  }
 
  .underLine{
-    height: 3px;
+    height: 10px;
     flex-shrink: 0;
-    width: 70px;
+    width: 10px;
     border-radius: 50px;
     animation: scalerUnder 0.5s ease-in-out;
+    border-radius: 50%;
  }
 
  @keyframes scalerUnder {
     0%{
-        width: 0;
+        width: 10px;
         transform: scaleX(0%);
     }
 
     100%{
-        width: 70px;
+        width: 12px;
         transform: scaleX(100%);
     }
  }

@@ -114,7 +114,7 @@ Refresh your online brand identity with my experienced website redesign services
 
   <div className='viewmoreFlexer2'>
 
-<Link to="/Services" className='viewMore3' style={bgColor2} ><span style={font}>Contact Me</span></Link>
+<Link to="/Contact" className='viewMore3' style={bgColor2} ><span style={font}>Contact Me</span></Link>
 
 </div>
 
