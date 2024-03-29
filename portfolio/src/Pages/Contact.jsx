@@ -186,15 +186,16 @@ const [messageSent, setMessageSent] = useState(false)
 
 const submiter = (e)=>{
   e.preventDefault()
-  console.log(form1)
   setMessageSent(true)
 }
 
 useEffect(()=>{
   setTimeout(() => {
     setMessageSent(false)
-  }, 3000);
+  }, 2500);
 },[submiter])
+
+
 
 
 const form = useRef();
@@ -229,7 +230,7 @@ const form = useRef();
 
      
 
-    <h1 className='text-4xl contactH1' style={font}>Let’s build an amazing project together.</h1>
+    <h1 className='contactH1' style={font}>Let’s build an amazing project together.</h1>
 
     <p style={font} className='describe'>Describe your project and leave your contact info, I'll get back to you within 24 hours.
     </p>
@@ -242,7 +243,7 @@ const form = useRef();
 
     <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
-    <h1 className='projectTypeH1 text-3xl' style={fontColor2}>What is your project about?</h1>
+    <h1 className='projectTypeH1' style={fontColor2}>What is your project about?</h1>
 
     </section>
 
@@ -293,14 +294,14 @@ const form = useRef();
 
   <div className='personName'>
 
-<h1 className='text-3xl' style={fontColor2}>Your Name</h1>
+<h1 style={fontColor2}>Your Name</h1>
 
 <input type="text" name="name" style={fontColor2} onChange={formHandling} placeholder='Ex: Davia Adiel' id='yourName' />
 </div>
 
 <div className='personEmail'>
 
-<h1 className='text-3xl' style={fontColor2}>Your Email Address</h1>
+<h1  style={fontColor2}>Your Email Address</h1>
 
 <input type="email" name='email' style={fontColor2}  onChange={formHandling} placeholder='Ex: david@company.com' id='yourEmail'/>
 
@@ -308,16 +309,16 @@ const form = useRef();
 
 <div className='personPhoneNo'>
 
-<h1 className='text-3xl' style={fontColor2}>Phone</h1>
+<h1 style={fontColor2}>Phone</h1>
 
 <input type="text" name='phone' style={fontColor2} onChange={formHandling} id='phoneNumber' placeholder='Ex: 999-999-9999'/>
 </div>
 
 <div className='tellmeabout'>
 
-<h1 className='text-3xl'  style={fontColor2}>Tell me about your project</h1>
+<h1  style={fontColor2}>Tell me about your project</h1>
 
-<input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling}/>
+<input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling} placeholder='message'/>
 </div>
 
 <button className='sendButton' style={fontColor2} onClick={submiter}>Send Message</button>
@@ -342,7 +343,7 @@ const form = useRef();
 
  </section>}
 
-<div className="strecher"></div>
+<div className="strecher3"></div>
 
 <div className='copyright' style={font}><p style={fontColor2}> Copyright © 2024 General Dave</p></div>
 

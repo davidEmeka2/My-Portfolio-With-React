@@ -27,6 +27,7 @@
 }
 
 .contactH1{
+    font-size: 36px;
     padding-top: 25px;
     padding-right: 50px;
     flex-shrink: 0;
@@ -53,6 +54,7 @@
     width: 500px;
     height: 50px;
     flex-shrink: 0;
+    font-size: 30px;
 }
 
 .projects{
@@ -111,6 +113,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
+    font-size: 30px;
 }
 
 .personName{
@@ -156,18 +159,22 @@
 
 #yourName{
     outline: none;
+    font-size: 13px;
 }
 
 #yourEmail{
     outline: none;
+    font-size: 13px;
 }
 
 #phoneNumber{
     outline: none;
+    font-size: 13px;
 }
 
 #tellMeAbout{
     outline: none;
+    font-size: 13px;
 }
 
 .sendButton{
@@ -177,6 +184,7 @@
     box-shadow: 1px 1px 5px #8d8c8caa;
     text-align: center;
     color: black;
+    font-size: 14px;
 }
 
 
@@ -224,4 +232,109 @@
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.strecher3{
+    height: 100px;
+    /* border: 1px solid black; */
+    width: 30px;
+}
+
+@media screen and (max-width:550px) {
+
+    
+   
+    .contactH1{
+        font-size: 24px;
+    }
+
+    .describe{
+        width: 300px;
+        padding-right: 55px;
+        border: 2px solid black;
+    }
+
+    .clickProject{
+        margin-top: 100px;
+    }
+    
+
+    .projectTypeH1{
+        /* border: 2px solid black; */
+        width: 300px;
+        height: 50px;
+        flex-shrink: 0;
+        font-size: 24px;
+    }
+
+    .selectProjects{
+        width: 300px;
+        height: 580px;
+        border: 2px solid black;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-shrink: 0;
+    }
+    
+    .personsDetails{
+        margin-top: 270px;
+        width: 300px;
+        height: 650px;
+        border: 2px solid black;
+        gap: 30px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        font-size: 20px;
+    }
+
+    .contactPicImg{
+        height: 1680px;
+    }
+
+    .strecher3{
+        height: 450px;
+        /* border: 1px solid black; */
+        width: 30px;
+    }
+
+    .sentSec{
+        position: absolute;
+        height: 2700px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.151);
+        /* border: 2px solid black; */
+        align-items: center;
+        justify-content: center;    
+     }
+
+     .contactPic{
+        width: 1px;
+     }
+
+     .contactHeader{
+        gap: 20%;
+     }
+
+     .clickProject{
+        gap: 20%;
+     }
+
+     .projects{
+        gap: 15%;
+     }
+
+     .personInfo{
+        gap: 15%;
+     }
+
+     .sendButton{
+        margin: auto;
+     }
+
 }
