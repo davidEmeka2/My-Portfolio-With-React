@@ -17,11 +17,17 @@
 .contactPic{
     width: 400px;
     height: 50px;
-    flex-shrink: 0;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    margin-left: -10px;
+}
+
+
+.contactPicImg{
+    height: 1320px;
 }
 
 .contactH1{
+    padding-top: 25px;
     padding-right: 50px;
     flex-shrink: 0;
     /* border: 2px solid black; */
@@ -34,7 +40,7 @@
 }
 
 .clickProject{
-    border: 2px solid black;   
+    /* border: 2px solid black;    */
     height: 100px;
     padding: 10px;
     display: flex;
@@ -44,27 +50,28 @@
 
 .projectTypeH1{
     /* border: 2px solid black; */
-    width: 400px;
+    width: 500px;
     height: 50px;
     flex-shrink: 0;
 }
 
 .projects{
-    border: 2px solid black;   
+    /* border: 2px solid black;    */
     height: 300px;
     padding: 10px;
     display: flex;
-   gap: 10%;
+    gap: 10%;
 }
 
 .selectProjects{
-    width: 600px;
+    width: 500px;
     height: 280px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     flex-wrap: wrap;
     display: flex;
     gap: 20px;
     padding: 10px;
+    flex-shrink: 0;
 }
 
 .selectProjects > p{
@@ -87,7 +94,7 @@
 }
 
 .personInfo{
-    border: 2px solid black;   
+    /* border: 2px solid black;    */
     height: 600px;
     padding: 10px;
     display: flex;
@@ -96,13 +103,14 @@
 }
 
 .personsDetails{
-    width: 650px;
+    width: 500px;
     height: 550px;
-    border: 2px solid blue;
-    gap: 20px;
+    /* border: 2px solid black; */
+    gap: 30px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 .personName{
@@ -169,7 +177,6 @@
     box-shadow: 1px 1px 5px #8d8c8caa;
     text-align: center;
     color: black;
-   
 }
 
 
@@ -186,3 +193,35 @@
     outline: none;
     display: none;
  }
+
+ .sentSec{
+    position: absolute;
+    height: 2000px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.151);
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;    
+ }
+
+.messageSent{
+    background-color: white;
+    height: 370px;
+    width: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+}
+
+.sentOk{
+   border: 0.5px solid #aaaa;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

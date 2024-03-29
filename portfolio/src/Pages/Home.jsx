@@ -74,7 +74,9 @@ import 'aos/dist/aos.css'
 
 function Home({Playfair, font, Roboto, Opensans, defaultFont, themeChanger, bgColor1, bgColor2, fontColor1, fontColor2, konoha, bigMoney, forever, pauser,themeChanger2,themeChanger3,defaultTheme}) {
 
-
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   useEffect(()=>{
     Aos.init({

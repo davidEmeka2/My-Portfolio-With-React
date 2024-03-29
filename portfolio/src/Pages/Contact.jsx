@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 import "../Pages/contactPage.css"
+import contactbgPic from "../assets/contactBgPic.jpg"
+import checkGif from "../assets/check.gif"
 
 
 function Contact({font,bgColor1,bgColor2,fontColor1,fontColor2}) {
@@ -179,7 +182,19 @@ const formHandling = (e)=>{
  })
 }
 
+const [messageSent, setMessageSent] = useState(false)
 
+const submiter = (e)=>{
+  e.preventDefault()
+  console.log(form1)
+  setMessageSent(true)
+}
+
+useEffect(()=>{
+  setTimeout(() => {
+    setMessageSent(false)
+  }, 3000);
+},[submiter])
 
 
 const form = useRef();
@@ -208,7 +223,7 @@ const form = useRef();
     <>
     <header className='contactHeader'>
 
-    <div className='contactPic'></div>
+    <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg'/></div>
 
     <section className='contactHeaderSec' style={fontColor2}>
 
@@ -225,7 +240,7 @@ const form = useRef();
 
     <section className='clickProject' style={font}>
 
-    <div className='contactPic'></div>
+    <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
     <h1 className='projectTypeH1 text-3xl' style={fontColor2}>What is your project about?</h1>
 
@@ -233,7 +248,7 @@ const form = useRef();
 
     <section className='projects' style={font}>
 
-    <div className='contactPic'></div>
+    <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
    <div className='selectProjects' style={fontColor2}>
 
@@ -270,9 +285,9 @@ const form = useRef();
 
     <section className='personInfo' style={font}>
 
-<div className='contactPic'></div>
+<div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
-<form className='personsDetails' ref={form} onSubmit={sendEmail}>
+<form className='personsDetails' ref={form}>
 
   <input type="text" name='tags' value={[tags, tags2, tags3, tags4, tags5, tags6, tags7, tags8, tags9, tags10 ]} id='tags'/>
 
@@ -305,16 +320,31 @@ const form = useRef();
 <input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling}/>
 </div>
 
-<button className='sendButton' style={fontColor2}>Send Message</button>
+<button className='sendButton' style={fontColor2} onClick={submiter}>Send Message</button>
 
 </form>
 
 </section>
 
+{messageSent && <section className='sentSec'>
+
+<div className='messageSent' data-aos ="fade-right" style={fontColor2}>
+
+  <img src={checkGif} alt="" data-aos ="fade-right" />
+
+ <h1 className='text-4xl' data-aos ="fade-right" style={font}>Thank You!</h1>
+
+ <p className='text-center text-xs' data-aos ="fade-right" style={font}>Your message has been successfully sent</p>
+
+ <Link to="/" className='sentOk'  data-aos ="fade-right"  ><span style={font}>Ok</span></Link>
+
+ </div>
+
+ </section>}
+
 <div className="strecher"></div>
 
 <div className='copyright' style={font}><p style={fontColor2}> Copyright © 2024 General Dave</p></div>
-
 
     </>
   )
