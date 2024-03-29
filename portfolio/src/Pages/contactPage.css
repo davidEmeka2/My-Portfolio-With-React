@@ -246,12 +246,14 @@
    
     .contactH1{
         font-size: 24px;
+        text-align: center;
     }
 
     .describe{
         width: 300px;
         padding-right: 55px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
+
     }
 
     .clickProject{
@@ -270,7 +272,7 @@
     .selectProjects{
         width: 300px;
         height: 580px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         flex-wrap: wrap;
         display: flex;
         gap: 20px;
@@ -282,7 +284,7 @@
         margin-top: 270px;
         width: 300px;
         height: 650px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         gap: 30px;
         padding: 10px;
         display: flex;
@@ -333,8 +335,28 @@
         gap: 15%;
      }
 
-     .sendButton{
-        margin: auto;
+
+}
+
+@media screen and (max-width:380px) {
+    .contactPic{
+        width: 1px;
+     }
+
+     .contactHeader{
+        gap: 15%;
+     }
+
+     .clickProject{
+        gap: 15%;
+     }
+
+     .projects{
+        gap: 10%;
+     }
+
+     .personInfo{
+        gap: 10%;
      }
 
 }

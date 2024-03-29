@@ -222,11 +222,11 @@ const form = useRef();
 
   return (
     <>
-    <header className='contactHeader'>
+    <header className='contactHeader' data-aos ="fade-right">
 
-    <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg'/></div>
+    <div className='contactPic' data-aos ="fade-right"><img src={contactbgPic} alt="" className='contactPicImg'/></div>
 
-    <section className='contactHeaderSec' style={fontColor2}>
+    <section className='contactHeaderSec' style={fontColor2} data-aos ="fade-right">
 
      
 
@@ -239,86 +239,86 @@ const form = useRef();
 
     </header>
 
-    <section className='clickProject' style={font}>
+    <section className='clickProject' style={font} data-aos ="fade-right">
 
-    <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
+    <div className='contactPic' data-aos ="fade-right"><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
-    <h1 className='projectTypeH1' style={fontColor2}>What is your project about?</h1>
+    <h1 className='projectTypeH1' style={fontColor2} data-aos ="fade-right">What is your project about?</h1>
 
     </section>
 
-    <section className='projects' style={font}>
+    <section className='projects' style={font} data-aos ="fade-right">
 
     <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
 
-   <div className='selectProjects' style={fontColor2}>
+   <div className='selectProjects' style={fontColor2} data-aos ="fade-right">
 
     <p style={{backgroundColor:changeAsh,
-     width: "120px"}} onClick={changeAshFunc} >Website Design</p>
+     width: "120px"}} onClick={changeAshFunc} data-aos ="fade-right">Website Design</p>
 
     <p style={{backgroundColor:changeAsh2,
-     width: "120px"}} onClick={changeAshFunc2}>Website Redesign</p>
+     width: "120px"}} onClick={changeAshFunc2} data-aos ="fade-right">Website Redesign</p>
 
-    <p style={{backgroundColor:changeAsh3, width: "150px"}} onClick={changeAshFunc3}>Landing Page Design</p>
+    <p style={{backgroundColor:changeAsh3, width: "150px"}} onClick={changeAshFunc3} data-aos ="fade-right">Landing Page Design</p>
 
     <p style={{backgroundColor:changeAsh4,
-     width: "110px"}} onClick={changeAshFunc4}>Graphics Design</p>
+     width: "110px"}} onClick={changeAshFunc4} data-aos ="fade-right">Graphics Design</p>
 
     <p style={{backgroundColor:changeAsh5,
-     width: "90px"}} onClick={changeAshFunc5}>UI Design</p>
+     width: "90px"}} onClick={changeAshFunc5} data-aos ="fade-right">UI Design</p>
 
-    <p style={{backgroundColor:changeAsh6}} onClick={changeAshFunc6}>Single Page Applications</p>
+    <p style={{backgroundColor:changeAsh6}} onClick={changeAshFunc6} data-aos ="fade-right">Single Page Applications</p>
 
-    <p style={{backgroundColor:changeAsh10}} onClick={changeAshFunc10}>Maintenance and Support</p>
+    <p style={{backgroundColor:changeAsh10}} onClick={changeAshFunc10} data-aos ="fade-right">Maintenance and Support</p>
 
-    <p style={{backgroundColor:changeAsh7}} onClick={changeAshFunc7}>Consultation and Training</p>
+    <p style={{backgroundColor:changeAsh7}} onClick={changeAshFunc7} data-aos ="fade-right">Consultation and Training</p>
 
     <p style={{backgroundColor:changeAsh8,
-     width: "110px"}} onClick={changeAshFunc8}>Photo Editing</p>
+     width: "110px"}} onClick={changeAshFunc8} data-aos ="fade-right">Photo Editing</p>
 
     <p style={{backgroundColor:changeAsh9,
-     width: "110px"}} onClick={changeAshFunc9}>Video Editing</p>
+     width: "110px"}} onClick={changeAshFunc9} data-aos ="fade-right">Video Editing</p>
 
 
    </div>
     
     </section>
 
-    <section className='personInfo' style={font}>
+    <section className='personInfo' style={font} data-aos ="fade-right">
 
-<div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}}/></div>
+<div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}} data-aos ="fade-right" /></div>
 
 <form className='personsDetails' ref={form}>
 
   <input type="text" name='tags' value={[tags, tags2, tags3, tags4, tags5, tags6, tags7, tags8, tags9, tags10 ]} id='tags'/>
 
-  <div className='personName'>
+  <div className='personName' data-aos ="fade-right">
 
-<h1 style={fontColor2}>Your Name</h1>
+<h1 style={fontColor2} data-aos ="fade-right">Your Name</h1>
 
-<input type="text" name="name" style={fontColor2} onChange={formHandling} placeholder='Ex: Davia Adiel' id='yourName' />
+<input type="text" name="name" style={fontColor2} onChange={formHandling} placeholder='Ex: Davia Adiel' id='yourName' data-aos ="fade-right" />
 </div>
 
-<div className='personEmail'>
+<div className='personEmail' data-aos ="fade-right">
 
-<h1  style={fontColor2}>Your Email Address</h1>
+<h1  style={fontColor2} data-aos ="fade-right">Your Email Address</h1>
 
-<input type="email" name='email' style={fontColor2}  onChange={formHandling} placeholder='Ex: david@company.com' id='yourEmail'/>
+<input type="email" name='email' style={fontColor2}  onChange={formHandling} placeholder='Ex: david@company.com' id='yourEmail' data-aos ="fade-right"/>
 
 </div>
 
-<div className='personPhoneNo'>
+<div className='personPhoneNo' data-aos ="fade-right">
 
 <h1 style={fontColor2}>Phone</h1>
 
-<input type="text" name='phone' style={fontColor2} onChange={formHandling} id='phoneNumber' placeholder='Ex: 999-999-9999'/>
+<input type="text" name='phone' style={fontColor2} onChange={formHandling} id='phoneNumber' placeholder='Ex: 999-999-9999' data-aos ="fade-right" />
 </div>
 
-<div className='tellmeabout'>
+<div className='tellmeabout' data-aos ="fade-right">
 
-<h1  style={fontColor2}>Tell me about your project</h1>
+<h1  style={fontColor2} data-aos ="fade-right">Tell me about your project</h1>
 
-<input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling} placeholder='message'/>
+<input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling} placeholder='message' data-aos ="fade-right" />
 </div>
 
 <button className='sendButton' style={fontColor2} onClick={submiter}>Send Message</button>
