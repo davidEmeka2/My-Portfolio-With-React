@@ -185,7 +185,6 @@ const formHandling = (e)=>{
 const [messageSent, setMessageSent] = useState(false)
 
 const submiter = (e)=>{
-  e.preventDefault()
   setMessageSent(true)
 }
 
@@ -202,6 +201,8 @@ const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    submiter()
+
 
     emailjs
       .sendForm('service_rwfu2d9',
@@ -254,30 +255,30 @@ const form = useRef();
    <div className='selectProjects' style={fontColor2} data-aos ="fade-right">
 
     <p style={{backgroundColor:changeAsh,
-     width: "120px"}} onClick={changeAshFunc} data-aos ="fade-right">Website Design</p>
+     width: "120px"}} onClick={changeAshFunc} >Website Design</p>
 
     <p style={{backgroundColor:changeAsh2,
-     width: "120px"}} onClick={changeAshFunc2} data-aos ="fade-right">Website Redesign</p>
+     width: "120px"}} onClick={changeAshFunc2} >Website Redesign</p>
 
-    <p style={{backgroundColor:changeAsh3, width: "150px"}} onClick={changeAshFunc3} data-aos ="fade-right">Landing Page Design</p>
+    <p style={{backgroundColor:changeAsh3, width: "150px"}} onClick={changeAshFunc3} >Landing Page Design</p>
 
     <p style={{backgroundColor:changeAsh4,
-     width: "110px"}} onClick={changeAshFunc4} data-aos ="fade-right">Graphics Design</p>
+     width: "110px"}} onClick={changeAshFunc4} >Graphics Design</p>
 
     <p style={{backgroundColor:changeAsh5,
-     width: "90px"}} onClick={changeAshFunc5} data-aos ="fade-right">UI Design</p>
+     width: "90px"}} onClick={changeAshFunc5} >UI Design</p>
 
-    <p style={{backgroundColor:changeAsh6}} onClick={changeAshFunc6} data-aos ="fade-right">Single Page Applications</p>
+    <p style={{backgroundColor:changeAsh6}} onClick={changeAshFunc6} >Single Page Applications</p>
 
-    <p style={{backgroundColor:changeAsh10}} onClick={changeAshFunc10} data-aos ="fade-right">Maintenance and Support</p>
+    <p style={{backgroundColor:changeAsh10}} onClick={changeAshFunc10} >Maintenance and Support</p>
 
-    <p style={{backgroundColor:changeAsh7}} onClick={changeAshFunc7} data-aos ="fade-right">Consultation and Training</p>
+    <p style={{backgroundColor:changeAsh7}} onClick={changeAshFunc7} >Consultation and Training</p>
 
     <p style={{backgroundColor:changeAsh8,
-     width: "110px"}} onClick={changeAshFunc8} data-aos ="fade-right">Photo Editing</p>
+     width: "110px"}} onClick={changeAshFunc8}>Photo Editing</p>
 
     <p style={{backgroundColor:changeAsh9,
-     width: "110px"}} onClick={changeAshFunc9} data-aos ="fade-right">Video Editing</p>
+     width: "110px"}} onClick={changeAshFunc9}>Video Editing</p>
 
 
    </div>
@@ -321,7 +322,7 @@ const form = useRef();
 <input name="tellMe" id="tellMeAbout" style={fontColor2} onChange={formHandling} placeholder='message' data-aos ="fade-right" />
 </div>
 
-<button className='sendButton' style={fontColor2} onClick={submiter}>Send Message</button>
+<input className='sendButton' type="Submit" value="Send Message" />
 
 </form>
 
