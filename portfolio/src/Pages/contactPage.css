@@ -116,6 +116,8 @@
     font-size: 30px;
 }
 
+
+
 .personName{
     border-bottom: 1px solid #aaaa;
     width: 300px;
@@ -242,7 +244,9 @@
 
 @media screen and (max-width:550px) {
 
-    
+    .personInfo{
+       margin-top: 270px;
+    }
    
     .contactH1{
         font-size: 24px;
@@ -281,7 +285,7 @@
     }
     
     .personsDetails{
-        margin-top: 270px;
+        margin-top: 50px;
         width: 300px;
         height: 650px;
         /* border: 2px solid black; */
