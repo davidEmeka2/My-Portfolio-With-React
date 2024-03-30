@@ -288,7 +288,7 @@ const form = useRef();
 
 <div className='contactPic'><img src={contactbgPic} alt="" className='contactPicImg' style={{visibility:"hidden"}} data-aos ="fade-right" /></div>
 
-<form className='personsDetails' ref={form}>
+<form className='personsDetails' ref={form} onSubmit={sendEmail}>
 
   <input type="text" name='tags' value={[tags, tags2, tags3, tags4, tags5, tags6, tags7, tags8, tags9, tags10 ]} id='tags'/>
 

@@ -388,7 +388,7 @@ Experience the transformation with my advanced Photoshop skills! I've expertly s
 <div  className='text-center todoTxt'>
   <h1 className='text-4xl text-center pb-3'><span>Fake Web Store</span></h1>
   <p>
-  With my React-powered online store, take a step toward the future of online purchasing. It has a carefully chosen product selection, lightning-fast speed, and elegant navigation thanks to the creative Fake Store API. Here at David's Web Store, ease and quality collide!
+ It's a showcase of React's prowess and API integration. With React's cutting-edge technology, coupled with seamless API utilization, Davids Webstore delivers a browsing experience like no other. Explore the future of web development, where React and APIs come together to redefine online shopping
 
   </p>
   </div>
