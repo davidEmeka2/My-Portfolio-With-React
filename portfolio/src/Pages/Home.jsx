@@ -334,7 +334,7 @@ const handleClick2 = ()=>{
 
 <div className='text-center  figmaTxt'>
   
-<h1 className='text-4xl text-center pb-3'><span>Resturant Dish Animation</span></h1>
+<h1 className='text-4xl text-center pb-3'><span>Restaurant Dish Animation</span></h1>
 <p>
 Enjoy a tasty animation! Using Figma, I crafted a dynamic restaurant dish animation that seamlessly switches between breakfast and lunch with a simple click. Experience a delightful visual transition between meals!
   </p>
