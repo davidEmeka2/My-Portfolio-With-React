@@ -131,11 +131,11 @@ const handleClick2 = ()=>{
   return (
     <>
 <section className='firstSec'>
-    <section className='nameSection' data-aos="fade-right">
-      <h1 style={font}><span data-aos="fade-right" className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2} data-aos="fade-right" >I'm</span> <span className='david' style={fontColor2} data-aos="fade-right" >David</span> </h1>
+    <section className='nameSection'>
+      <h1 style={font}><span  className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2}  >I'm</span> <span className='david' style={fontColor2}  >David</span> </h1>
     </section>
 
-    <h1 className='youre' style={font}><span style={fontColor2} ><p data-aos="fade-up">Front-End Web Developer.</p></span></h1>
+    <h1 className='youre' style={font}><span style={fontColor2} ><p >Front-End Web Developer.</p></span></h1>
 
 
 
