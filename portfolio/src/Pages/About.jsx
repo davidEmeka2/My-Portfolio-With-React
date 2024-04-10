@@ -23,12 +23,13 @@ function About({font,bgColor1,bgColor2,fontColor1,fontColor2}) {
   const [scrollMe8, setScrollMe8] = useState("")
   
 
-let scroller = document.documentElement.scrollTop
+
 
 
 
   const handleEvent = ()=>{
   
+    let scroller = document.documentElement.scrollTop
 
     if(scroller > 300){
       setScrollMe("scaleX")
@@ -73,20 +74,20 @@ let scroller = document.documentElement.scrollTop
     }, [About]);
   
 
-  const [bringDown, setBringDown] = useState(true)
+//   const [bringDown, setBringDown] = useState(true)
 
-  useEffect(()=>{
-    setTimeout(() => {
-      window.scrollTo(0,1000)
+//   useEffect(()=>{
+//     setTimeout(() => {
+//       window.scrollTo(0,1000)
 
-      setBringDown(false)
+//       setBringDown(false)
 
-setTimeout(() => {
-  window.scrollTo(0,0)
-}, 100);
+// setTimeout(() => {
+//   window.scrollTo(0,0)
+// }, 100);
      
-    }, 200);
-  },[About])
+//     }, 200);
+//   },[About])
   
   useEffect(() => {
     window.scrollTo(0,0);
@@ -367,7 +368,7 @@ setTimeout(() => {
 
 <div className='copyright' style={font}><p style={fontColor2}> Copyright © 2024 General Dave</p></div>
 
-{bringDown && <div style={{height:"1000px", width:"100px",flexShrink:"0"}}></div>}
+{/* {bringDown && <div style={{height:"1000px", width:"100px",flexShrink:"0"}}></div>} */}
 
    </>
   )
