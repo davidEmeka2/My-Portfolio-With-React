@@ -14,9 +14,9 @@ function Loading({font}) {
   const interval = setInterval(()=>{
     if(number === 100){
       clearInterval(interval)
-      setNumber(number)
+     
     }
-      else{
+      if (number < 100){
        setNumber(number + 10)
       }
       
