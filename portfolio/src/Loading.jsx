@@ -12,25 +12,27 @@ function Loading({font}) {
 
 
   const interval = setInterval(()=>{
-    
-     
-    }
-      if (number < 100){
+     if (number < 100){
        setNumber(prevState + 10)
-      }
-      
-  },600)
+  }
+},600)
+
 
   useEffect(() => {
+      
    setTimeout(() => {
     setLoading(false)
    }, 6000);
 
       
-      
-       if(number === 100){
-      clearInterval(interval)
-  }, [])
+
+      return()=> if(number === 100){
+        clearInterval(interval)
+          
+  }, [number,interval])
+
+    
+     
 
   return (
     <>
