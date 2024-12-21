@@ -17,7 +17,7 @@ function Loading({font}) {
   const interval = setInterval(() => {
     setNumber(prevNumber => {
       if (prevNumber < 100) {
-        return prevNumber + 3;
+        return prevNumber + 1;
       } else {
         clearInterval(interval);
         return prevNumber;
