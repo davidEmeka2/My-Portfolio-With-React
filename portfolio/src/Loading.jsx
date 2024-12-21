@@ -26,8 +26,8 @@ function Loading({font}) {
 
       
 
-      return()=> if(number === 100){
-        clearInterval(interval)
+      return()=> {if(number === 100){
+        clearInterval(interval)}
           
   }, [number,interval])
 
