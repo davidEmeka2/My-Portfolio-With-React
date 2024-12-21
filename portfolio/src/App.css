@@ -390,6 +390,8 @@ html{
     scroll-timeline: --mov;
 }
 
+.picSec img {zoom: 150%;}
+
 
 .mov1{
     position: absolute;
