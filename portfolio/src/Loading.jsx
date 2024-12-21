@@ -23,7 +23,7 @@ function Loading({font}) {
         return prevNumber;
       }
     });
-  }, 50);
+  }, 60);
 
   return () => clearInterval(interval); // Cleanup the interval when the component unmounts
 }, []);
