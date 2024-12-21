@@ -25,8 +25,10 @@ function Loading({font}) {
     });
   }, 60);
 
-  return () => clearInterval(interval); // Cleanup the interval when the component unmounts
+  return () => clearInterval(interval); 
 }, []);
+
+const numberUse = {width: number + "%", }
 
   useEffect(() => {
       
@@ -44,7 +46,7 @@ function Loading({font}) {
 
     {loading && <div className='mainLoader' >
         <div className='loadbox' >
-          <div className='loadScale'></div>
+          <div className='loadScale' style={numberUse}></div>
         <p className='number text-5xl' style={font}>{number}%</p>
         </div>
         </div>

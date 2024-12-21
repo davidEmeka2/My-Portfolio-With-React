@@ -34,7 +34,7 @@ background-color: white;
 
 .loadScale{
    height: 100%;
-   width: 100%;
+  
     animation: loadIn 6000ms ;
     transform-origin: left;
     background-color: black;
