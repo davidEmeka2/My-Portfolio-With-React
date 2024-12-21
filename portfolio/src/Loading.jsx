@@ -6,30 +6,35 @@ import Home from './Pages/Home'
 
 function Loading({font}) {
 
-    const [number, setNumber] = useState(0)
+  
 
   const[loading,setLoading] = useState(true)
 
+  const [number, setNumber] = useState(0)
 
-  const interval = setInterval(()=>{
-     if (number < 100){
-       setNumber(prevState + 10)
-  }
-},600)
 
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setNumber(prevNumber => {
+      if (prevNumber < 100) {
+        return prevNumber + 10;
+      } else {
+        clearInterval(interval);
+        return prevNumber;
+      }
+    });
+  }, 600);
+
+  return () => clearInterval(interval); // Cleanup the interval when the component unmounts
+}, []);
 
   useEffect(() => {
       
    setTimeout(() => {
     setLoading(false)
    }, 6000);
-
-      
-
-      return()=> {if(number === 100){
-        clearInterval(interval)}
           
-  }, [number,interval])
+  }, [])
 
     
      
