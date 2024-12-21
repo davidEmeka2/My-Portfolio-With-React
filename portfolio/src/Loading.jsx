@@ -17,13 +17,13 @@ function Loading({font}) {
   const interval = setInterval(() => {
     setNumber(prevNumber => {
       if (prevNumber < 100) {
-        return prevNumber + 10;
+        return prevNumber + 1;
       } else {
         clearInterval(interval);
         return prevNumber;
       }
     });
-  }, 600);
+  }, 50);
 
   return () => clearInterval(interval); // Cleanup the interval when the component unmounts
 }, []);
