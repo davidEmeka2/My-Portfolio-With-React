@@ -12,12 +12,11 @@ function Loading({font}) {
 
 
   const interval = setInterval(()=>{
-    if(number === 100){
-      clearInterval(interval)
+    
      
     }
       if (number < 100){
-       setNumber(number + 10)
+       setNumber(prevState + 10)
       }
       
   },600)
@@ -26,6 +25,11 @@ function Loading({font}) {
    setTimeout(() => {
     setLoading(false)
    }, 6000);
+
+      
+      
+       if(number === 100){
+      clearInterval(interval)
   }, [])
 
   return (
