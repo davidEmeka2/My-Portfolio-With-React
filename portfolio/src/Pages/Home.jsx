@@ -135,7 +135,7 @@ const handleClick2 = ()=>{
       <h1 style={font}><span  className='hi' style={fontColor2}>Hi,</span> <span className="im" style={fontColor2}  >I'm</span> <span className='david' style={fontColor2}  >David</span> </h1>
     </section>
 
-    <h1 className='youre' style={font}><span style={fontColor2} ><p >Mern Stack Web Developer.</p></span></h1>
+    <h1 className='youre' style={font}><span style={fontColor2} ><p >Front-End Web Developer.</p></span></h1>
 
 
 
