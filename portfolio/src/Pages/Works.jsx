@@ -210,7 +210,7 @@ function Works({font,bgColor1,bgColor2,fontColor1,fontColor2}) {
 
 
 <div  className='text-center todoTxt'>
-  <h1 className='text-4xl text-center pb-3'><span>To-Do App</span></h1>
+  <h1 className='text-4xl text-center pb-3'><span>Coinex</span></h1>
   <p>
   CoinEx is a dynamic platform for unlocking and trading cryptocurrency and NFTs. With a sleek interface, it serves as a central hub for crypto enthusiasts to explore market trends, manage assets, and dive into the world of digital collectibles seamlessly
   </p>
