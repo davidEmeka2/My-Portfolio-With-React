@@ -1590,7 +1590,7 @@ html{
 
  .todoListPic:hover::before{
     position: absolute;
-    content: url(https://res.cloudinary.com/dyrzp2wi6/image/upload/v1737625763/portfolio%20in%20react%20pseudo%20gifs/Coinex_-_Made_With_Clipchamp_qrj6cp.gif);
+    content: url(https://res.cloudinary.com/dyrzp2wi6/video/upload/v1737626605/portfolio%20in%20react%20pseudo%20gifs/coin_rsbp01.mp4);
    background-color: white;
    transform: scale(50%);
    z-index: 90;
