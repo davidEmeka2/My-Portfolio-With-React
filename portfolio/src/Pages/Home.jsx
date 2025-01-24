@@ -299,10 +299,10 @@ const handleClick2 = ()=>{
 
 
 <div  className='text-center todoTxt'>
-  <h1 className='text-4xl text-center pb-3'><span>To-Do App</span></h1>
+  <h1 className='text-4xl text-center pb-3'><span>Coinex</span></h1>
   <p>
-  Effortlessly manage tasks with my sleek ToDo app! Built with HTML, CSS, and JavaScript, it offers a minimalist design for easy organization. Add, edit, and mark tasks complete with style and simplicity. Stay productive on the go!
-  </p>
+  CoinEx is a dynamic platform for unlocking and trading cryptocurrency and NFTs. With a sleek interface, it serves as a central hub for crypto enthusiasts to explore market trends, manage assets, and dive into the world of digital collectibles seamlessly
+ </p>
   </div>
 
   </div>
@@ -313,9 +313,9 @@ const handleClick2 = ()=>{
   
 <div data-aos ="fade-right" className='todoButtons'>
 
-<a href="https://davidstodoapp.vercel.app/" target='_blank' className='viewSite'>View Site</a>
+<a href="https://coinex-vercel-app.vercel.app/" target='_blank' className='viewSite'>View Site</a>
 
-<a href="https://github.com/Davia222/To-do-App.git" target='_blank' className='gitHubRepo'>GitHub Repo</a>
+<a href="https://github.com/Davia222/-a--coinspace.vercel.app" target='_blank' className='gitHubRepo'>GitHub Repo</a>
 
 </div>
 
